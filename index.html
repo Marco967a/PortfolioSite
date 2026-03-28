@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Marco Santagati</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">Marco<span>Santagati</span></div>
+
+      <nav class="nav" id="mainNav">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">Chi sono</a>
+        <a href="#projects" class="nav__link">Progetti</a>
+        <a href="#contact" class="nav__link">Contatti</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Apri/chiudi menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Sezione Hero -->
+  <section class="hero" id="home">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <p class="hero__subtitle">Data Manager</p>
+        <h1 class="hero__title">Ciao, sono <span>Marco Santagati</span></h1>
+        <p class="hero__description">
+          Sviluppo interfacce web semplici, pulite e veloci.  
+          Questo è un template di portfolio minimale pensato per esercitarsi con HTML, CSS e JavaScript.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">Guarda i progetti</a>
+          <a href="#contact" class="btn btn--ghost">Contattami</a>
+        </div>
+      </div>
+
+      <div class="hero__image">
+        <div class="hero__avatar">
+          <span>NC</span>
+        </div>
+        <p class="hero__image-caption">
+          Qui puoi inserire una tua foto o un’illustrazione.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Chi Sono -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title">Chi sono</h2>
+      <p class="section__subtitle">
+        Una breve descrizione per presentarti.
+      </p>
+
+      <div class="about">
+        <p>
+          Sono uno sviluppatore web appassionato di interfacce semplici e usabili.
+          Questo testo è solo un esempio: i tuoi studenti possono sostituirlo con la
+          loro bio, le tecnologie che conoscono e i loro obiettivi.
+        </p>
+        <p>
+          Possono anche estendere la pagina aggiungendo una timeline, una sezione competenze
+          o un curriculum scaricabile. L’idea è avere una base pulita da cui partire.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Progetti -->
+  <section class="section section--gray" id="projects">
+    <div class="container">
+      <h2 class="section__title">Progetti</h2>
+      <p class="section__subtitle">
+        Alcuni progetti di esempio. Ogni card può essere collegata a GitHub o a una demo online.
+      </p>
+
+      <div class="projects">
+        <article class="project-card">
+          <h3 class="project-card__title">Portfolio site</h3>
+          <p class="project-card__text">
+            Una breve descrizione del progetto: tecnologia usata, obiettivo e cosa hai imparato.
+          </p>
+          <a href="#" class="project-card__link">https://github.com/Marco967a/Bibliothek</a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-card__title">Progetto 2</h3>
+          <p class="project-card__text">
+            Un altro esempio di progetto. Gli studenti possono duplicare queste card e personalizzarle.
+          </p>
+          <a href="#" class="project-card__link">Vedi dettagli</a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-card__title">Progetto 3</h3>
+          <p class="project-card__text">
+            Magari un’app JavaScript, una landing o un mini gioco.
+          </p>
+          <a href="#" class="project-card__link">Vedi dettagli</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Contatti -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section__title">Contatti</h2>
+      <p class="section__subtitle">
+        Un semplice form di contatto (non invia nulla, è solo front-end).
+      </p>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Il tuo nome" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nome@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Messaggio</label>
+          <textarea id="message" name="message" rows="4" placeholder="Scrivi il tuo messaggio..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Invia</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Nome Cognome – Portfolio di esempio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
