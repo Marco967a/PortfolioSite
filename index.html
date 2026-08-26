@@ -3,150 +3,525 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio – Marco Santagati</title>
+  <meta name="description" content="Portfolio professionale di Marco Santagati - Data Manager & Web Developer. Gestione dati, database, sviluppo web moderno." />
+  <meta name="author" content="Marco Santagati" />
+  <meta name="keywords" content="Marco Santagati, Data Manager, Web Developer, Portfolio, SQL, Python, JavaScript, HTML5, CSS3" />
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Marco Santagati | Data Manager & Web Developer" />
+  <meta property="og:description" content="Portfolio di Marco Santagati: gestione dati, database, sviluppo web moderno e interfacce pulite." />
+  <meta property="og:url" content="https://github.com/Marco967a/PortfolioSite" />
+  
+  <title>Marco Santagati | Data Manager & Web Developer</title>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%2338bdf8' font-family='sans-serif' font-weight='900' font-size='42'>MS</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header / Navbar -->
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="container header-content">
-      <div class="logo">Marco<span>Santagati</span></div>
+      <a href="#home" class="logo" aria-label="Marco Santagati Homepage">
+        <span class="logo__icon">MS</span>
+        <span class="logo__text">Marco<span class="accent">Santagati</span></span>
+      </a>
 
-      <nav class="nav" id="mainNav">
-        <a href="#home" class="nav__link">Home</a>
+      <nav class="nav" id="mainNav" aria-label="Navigazione principale">
+        <a href="#home" class="nav__link active">Home</a>
         <a href="#about" class="nav__link">Chi sono</a>
+        <a href="#skills" class="nav__link">Competenze</a>
         <a href="#projects" class="nav__link">Progetti</a>
         <a href="#contact" class="nav__link">Contatti</a>
       </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Apri/chiudi menu">
-        ☰
-      </button>
+      <div class="header-actions">
+        <a href="#contact" class="btn btn--sm btn--ghost header-cta">Scrivimi</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Apri o chiudi menu" aria-expanded="false" aria-controls="mainNav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Sezione Hero -->
-  <section class="hero" id="home">
-    <div class="container hero__content">
-      <div class="hero__text">
-        <p class="hero__subtitle">Data Manager</p>
-        <h1 class="hero__title">Ciao, sono <span>Marco Santagati</span></h1>
-        <p class="hero__description">
-          Sviluppo interfacce web semplici, pulite e veloci.  
-          Questo è un template di portfolio minimale pensato per esercitarsi con HTML, CSS e JavaScript.
-        </p>
-        <div class="hero__actions">
-          <a href="#projects" class="btn btn--primary">Guarda i progetti</a>
-          <a href="#contact" class="btn btn--ghost">Contattami</a>
-        </div>
-      </div>
-
-      <div class="hero__image">
-        <div class="hero__avatar">
-          <span>NC</span>
-        </div>
-        <p class="hero__image-caption">
-          Qui puoi inserire una tua foto o un’illustrazione.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sezione Chi Sono -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section__title">Chi sono</h2>
-      <p class="section__subtitle">
-        Una breve descrizione per presentarti.
-      </p>
-
-      <div class="about">
-        <p>
-          Sono uno sviluppatore web appassionato di interfacce semplici e usabili.
-          Questo testo è solo un esempio: i tuoi studenti possono sostituirlo con la
-          loro bio, le tecnologie che conoscono e i loro obiettivi.
-        </p>
-        <p>
-          Possono anche estendere la pagina aggiungendo una timeline, una sezione competenze
-          o un curriculum scaricabile. L’idea è avere una base pulita da cui partire.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sezione Progetti -->
-  <section class="section section--gray" id="projects">
-    <div class="container">
-      <h2 class="section__title">Progetti</h2>
-      <p class="section__subtitle">
-        Alcuni progetti di esempio. Ogni card può essere collegata a GitHub o a una demo online.
-      </p>
-
-      <div class="projects">
-        <article class="project-card">
-          <h3 class="project-card__title">Portfolio site</h3>
-          <p class="project-card__text">
-            Una breve descrizione del progetto: tecnologia usata, obiettivo e cosa hai imparato.
-          </p>
-          <a href="#" class="project-card__link">https://github.com/Marco967a/Bibliothek</a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-card__title">Progetto 2</h3>
-          <p class="project-card__text">
-            Un altro esempio di progetto. Gli studenti possono duplicare queste card e personalizzarle.
-          </p>
-          <a href="#" class="project-card__link">Vedi dettagli</a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-card__title">Progetto 3</h3>
-          <p class="project-card__text">
-            Magari un’app JavaScript, una landing o un mini gioco.
-          </p>
-          <a href="#" class="project-card__link">Vedi dettagli</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sezione Contatti -->
-  <section class="section" id="contact">
-    <div class="container">
-      <h2 class="section__title">Contatti</h2>
-      <p class="section__subtitle">
-        Un semplice form di contatto (non invia nulla, è solo front-end).
-      </p>
-
-      <form class="contact-form" id="contactForm">
-        <div class="form-row">
-          <div class="form-field">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="Il tuo nome" required />
+  <main>
+    <!-- Sezione Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <div class="hero__badge">
+            <span class="badge-dot"></span>
+            <span>Disponibile per nuove opportunità</span>
           </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="nome@example.com" required />
+
+          <h1 class="hero__title">
+            Ciao, sono <span class="gradient-text">Marco Santagati</span>
+          </h1>
+          <p class="hero__subtitle">Data Manager &amp; Web Developer</p>
+          
+          <p class="hero__description">
+            Combino competenze avanzate di <strong>gestione e modellazione dei dati</strong> con la passione per lo 
+            <strong>sviluppo web moderno</strong>. Realizzo soluzioni robuste, database strutturati e interfacce web veloci, pulite e accessibili.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Esplora i progetti
+            </a>
+            <a href="#contact" class="btn btn--ghost">
+              <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contattami
+            </a>
+          </div>
+
+          <div class="hero__socials">
+            <span class="hero__socials-label">Link rapidi:</span>
+            <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="social-link" title="Profilo GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:marco.santagati96@gmail.com" class="social-link" title="Invia un'email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
           </div>
         </div>
 
-        <div class="form-field">
-          <label for="message">Messaggio</label>
-          <textarea id="message" name="message" rows="4" placeholder="Scrivi il tuo messaggio..." required></textarea>
+        <div class="hero__image-wrapper">
+          <div class="hero__avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="hero__avatar">
+              <span>MS</span>
+            </div>
+            <div class="avatar-info">
+              <span class="avatar-name">Marco Santagati</span>
+              <span class="avatar-role">Data &amp; Web</span>
+            </div>
+            <div class="avatar-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">ETL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Chi Sono -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section__tag">Profilo</span>
+          <h2 class="section__title">Chi sono</h2>
+          <p class="section__subtitle">
+            Esperienza nell'analisi e gestione del dato unita allo sviluppo di interfacce web intuitive
+          </p>
         </div>
 
-        <button type="submit" class="btn btn--primary">Invia</button>
-        <p class="form-message" id="formMessage"></p>
-      </form>
-    </div>
-  </section>
+        <div class="about__grid">
+          <div class="about__card about__bio">
+            <h3>Visione &amp; Metodologia</h3>
+            <p>
+              Opero come <strong>Data Manager</strong> con una forte vocazione per lo <strong>sviluppo web</strong>. 
+              Il mio obiettivo è trasformare dati complessi e disaggregati in strutture ordinate, accessibili e fruibili 
+              attraverso strumenti digitali efficienti.
+            </p>
+            <p>
+              Credo nell'importanza di un codice pulito, nell'integrità dei dati relazionali e nella realizzazione di interfacce utente 
+              leggere e performanti. L'approccio unisce rigore analitico e cura per l'esperienza utente.
+            </p>
+          </div>
+
+          <div class="about__features">
+            <div class="feature-item">
+              <div class="feature-icon">📊</div>
+              <div class="feature-text">
+                <h4>Data Architecture &amp; Management</h4>
+                <p>Modellazione dati, pipeline ETL, query SQL complesse e gestione dell'integrità relazionale.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">⚡</div>
+              <div class="feature-text">
+                <h4>Front-End &amp; Web UI</h4>
+                <p>Sviluppo di interfacce web responsive, semantiche, veloci e con elevati standard di usabilità.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">🔄</div>
+              <div class="feature-text">
+                <h4>Automazione &amp; Scripting</h4>
+                <p>Automatizzazione di processi, parsing di flussi informativi e integrazione API.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Competenze (Tech Stack) -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section__tag">Stack Tecnologico</span>
+          <h2 class="section__title">Competenze &amp; Strumenti</h2>
+          <p class="section__subtitle">
+            Le tecnologie e gli ambienti con cui progetto, analizzo e sviluppo
+          </p>
+        </div>
+
+        <div class="skills__grid">
+          <!-- Categoria 1: Data Management -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">📈</div>
+              <h3>Data Management &amp; Analytics</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>
+                <span class="skill-name">SQL (PostgreSQL, MySQL)</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">Modellazione Dati &amp; Schemi ER</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">Processi ETL &amp; Data Cleaning</span>
+                <span class="skill-level">Intermedio / Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">Python (Data Analysis, Pandas)</span>
+                <span class="skill-level">Intermedio</span>
+              </li>
+              <li>
+                <span class="skill-name">Excel Avanzato / Reporting</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Categoria 2: Web Development -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">💻</div>
+              <h3>Web &amp; Software Development</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>
+                <span class="skill-name">HTML5 Semantico &amp; Accessibilità</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">CSS3 Moderno (Grid, Flex, Variabili)</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">JavaScript (ES6+, DOM, Async)</span>
+                <span class="skill-level">Intermedio / Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">REST APIs &amp; Integrazione JSON</span>
+                <span class="skill-level">Intermedio</span>
+              </li>
+              <li>
+                <span class="skill-name">Responsive &amp; Mobile-first Design</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Categoria 3: Strumenti & Metodi -->
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">🛠️</div>
+              <h3>Strumenti &amp; Workflow</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>
+                <span class="skill-name">Git &amp; GitHub (Version Control)</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">VS Code &amp; Dev Tools</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">Linux / Bash CLI</span>
+                <span class="skill-level">Intermedio</span>
+              </li>
+              <li>
+                <span class="skill-name">Problem Solving &amp; Debugging</span>
+                <span class="skill-level">Avanzato</span>
+              </li>
+              <li>
+                <span class="skill-name">Metodologie Agile / Scrum</span>
+                <span class="skill-level">Intermedio</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Progetti -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section__tag">Portfolio</span>
+          <h2 class="section__title">Progetti</h2>
+          <p class="section__subtitle">
+            Una selezione di repository e applicazioni sviluppate
+          </p>
+        </div>
+
+        <!-- Filtri Progetti -->
+        <div class="projects-filter" role="tablist" aria-label="Filtro per categorie di progetti">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tutti</button>
+          <button class="filter-btn" data-filter="data" role="tab" aria-selected="false">Data &amp; Backend</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Frontend</button>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid">
+          <!-- Progetto 1: Bibliothek -->
+          <article class="project-card" data-category="web data">
+            <div class="project-card__badge">Repository GitHub</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Bibliothek</h3>
+              <p class="project-card__text">
+                Applicazione per la catalogazione, ricerca e gestione di libri e prestiti. 
+                Focus su modellazione strutturata dei record, filtri dinamici e interfaccia chiara e intuitiva.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Data Modeling</span>
+                <span class="tag">HTML5/CSS3</span>
+                <span class="tag">Catalog Management</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/Marco967a/Bibliothek" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Vedi repository Bibliothek su GitHub">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>Vedi su GitHub</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Progetto 2: Portfolio Site -->
+          <article class="project-card" data-category="web">
+            <div class="project-card__badge">Live &amp; Open Source</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Portfolio Site</h3>
+              <p class="project-card__text">
+                Sito web portfolio personale sviluppato con architettura moderna, design responsive a tema scuro, 
+                interazioni fluide, scrollspy e accessibilità WAI-ARIA.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5 Semantico</span>
+                <span class="tag">CSS3 Modern</span>
+                <span class="tag">Vanilla JS ES6+</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/Marco967a/PortfolioSite" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Vedi repository PortfolioSite su GitHub">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>Vedi su GitHub</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Progetto 3: Data Analytics & ETL Hub -->
+          <article class="project-card" data-category="data">
+            <div class="project-card__badge">Data Project</div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Data Pipeline &amp; Reporting Suite</h3>
+              <p class="project-card__text">
+                Soluzione per l'ingestione, la pulizia automatica e la reportistica di dataset eterogenei con 
+                generazione di metriche aggregate e visualizzazioni per il processo decisionale.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">SQL</span>
+                <span class="tag">Python</span>
+                <span class="tag">ETL Pipeline</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Esplora su GitHub">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>Esplora su GitHub</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section__tag">Contatto</span>
+          <h2 class="section__title">Mettiti in contatto</h2>
+          <p class="section__subtitle">
+            Hai una proposta lavorativa, un progetto o desideri scambiare idee? Scrivimi un messaggio.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Info laterali -->
+          <div class="contact__info">
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card__details">
+                <h4>Email</h4>
+                <p>marco.santagati96@gmail.com</p>
+                <button type="button" class="copy-btn" id="copyEmailBtn" data-email="marco.santagati96@gmail.com" title="Copia email negli appunti">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copia indirizzo</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="contact-card__details">
+                <h4>GitHub</h4>
+                <p>Marco967a</p>
+                <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="link-external">
+                  Visita profilo &rarr;
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-card__details">
+                <h4>Posizione &amp; Disponibilità</h4>
+                <p>Italia (In sede / Ibrido / Full Remote)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form di Contatto -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Nome completo <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Mario Rossi" required />
+                <span class="field-error" id="nameError"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email di contatto <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="mario.rossi@example.com" required />
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Oggetto</label>
+              <input type="text" id="subject" name="subject" placeholder="Opportunità lavorativa / Progetto" />
+            </div>
+
+            <div class="form-field">
+              <label for="message">Messaggio <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Scrivi qui i dettagli del messaggio..." required></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
+              <span class="btn-text">Invia Messaggio</span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+
+            <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Nome Cognome – Portfolio di esempio</p>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        Marco<span>Santagati</span>
+        <p class="footer-subtitle">Data Management &amp; Web Development</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">Chi sono</a>
+        <a href="#skills">Competenze</a>
+        <a href="#projects">Progetti</a>
+        <a href="#contact">Contatti</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Marco Santagati. Tutti i diritti riservati.</p>
+        <p class="footer-note">Realizzato con HTML5, CSS3 Moderno e Vanilla JavaScript.</p>
+      </div>
     </div>
   </footer>
+
+  <!-- Pulsante Torna su -->
+  <button class="back-to-top" id="backToTop" aria-label="Torna all'inizio della pagina">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
