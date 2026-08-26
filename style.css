@@ -13,9 +13,11 @@
   --bg-card-hover: rgba(30, 41, 59, 0.85);
   --bg-alt: #0d1322;
   --bg-glass: rgba(15, 23, 42, 0.82);
+  --bg-spotlight: linear-gradient(145deg, rgba(15, 23, 42, 0.95) 0%, rgba(17, 24, 39, 0.85) 100%);
   
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-card: rgba(56, 189, 248, 0.12);
+  --border-spotlight: rgba(56, 189, 248, 0.25);
   --border-focus: #38bdf8;
 
   --text-primary: #f8fafc;
@@ -25,8 +27,11 @@
 
   --accent-cyan: #38bdf8;
   --accent-cyan-dark: #0284c7;
+  --accent-purple: #a855f7;
+  --accent-amber: #f59e0b;
   --accent-glow: rgba(56, 189, 248, 0.25);
   --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  --accent-gradient-purple: linear-gradient(135deg, #a855f7 0%, #38bdf8 100%);
   
   --success: #10b981;
   --success-soft: rgba(16, 185, 129, 0.15);
@@ -49,6 +54,7 @@
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
   --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
   --shadow-glow: 0 0 35px rgba(56, 189, 248, 0.2);
+  --shadow-spotlight: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(56, 189, 248, 0.15);
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -137,7 +143,7 @@ button, input, textarea {
 
 .section-header {
   text-align: center;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto 3.5rem;
 }
 
@@ -692,13 +698,221 @@ button, input, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   9. Projects Section & Filtering
+   9. Spotlight Case Study: NewBoxofficeProject
+   -------------------------------------------------------------------------- */
+.spotlight-card {
+  background: var(--bg-spotlight);
+  border: 1px solid var(--border-spotlight);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-bottom: 3.5rem;
+  box-shadow: var(--shadow-spotlight);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.spotlight-card.hidden {
+  display: none !important;
+}
+
+.spotlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent-gradient);
+}
+
+.spotlight-header {
+  margin-bottom: 2rem;
+}
+
+.spotlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1rem;
+}
+
+.spotlight-title {
+  font-size: clamp(1.75rem, 3vw, 2.3rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-tagline {
+  font-size: 1.1rem;
+  color: var(--accent-cyan);
+  font-weight: 500;
+}
+
+.spotlight-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.spotlight-desc strong {
+  color: var(--text-primary);
+}
+
+/* Pipeline Step Cards */
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.pipeline-step {
+  background: rgba(10, 15, 26, 0.7);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.pipeline-step:hover {
+  border-color: var(--border-card);
+  background: rgba(15, 23, 42, 0.9);
+  transform: translateY(-3px);
+}
+
+.step-num {
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  opacity: 0.5;
+  margin-bottom: 0.6rem;
+}
+
+.step-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.step-content p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* KPI Highlights */
+.spotlight-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.kpi-box {
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.kpi-value {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  margin-bottom: 0.25rem;
+}
+
+.kpi-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.spotlight-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.spotlight-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Expanded Technical Details */
+.spotlight-expanded {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
+  animation: fadeIn 0.3s ease;
+}
+
+.expanded-content h4 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.expanded-content p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.expanded-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.expanded-list li strong {
+  color: var(--accent-cyan);
+}
+
+.expanded-list code {
+  font-family: var(--font-mono);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  color: #f1f5f9;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------------------------------------------------------------
+   10. Projects Grid & Notebook Cards
    -------------------------------------------------------------------------- */
 .projects-filter {
   display: flex;
   justify-content: center;
   gap: 0.75rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   flex-wrap: wrap;
 }
 
@@ -706,7 +920,7 @@ button, input, textarea {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-subtle);
   color: var(--text-muted);
-  padding: 0.5rem 1.25rem;
+  padding: 0.55rem 1.35rem;
   border-radius: var(--radius-full);
   font-size: 0.9rem;
   font-weight: 500;
@@ -724,12 +938,12 @@ button, input, textarea {
   color: var(--text-dark);
   font-weight: 600;
   border-color: var(--accent-cyan);
-  box-shadow: 0 2px 10px rgba(56, 189, 248, 0.3);
+  box-shadow: 0 2px 12px rgba(56, 189, 248, 0.35);
 }
 
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
@@ -756,27 +970,61 @@ button, input, textarea {
   display: none !important;
 }
 
+.project-card__badge-wrapper {
+  margin-bottom: 0.85rem;
+}
+
 .project-card__badge {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: var(--accent-cyan);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 0.75rem;
+}
+
+/* Notebook Card Specifics */
+.project-card--notebook {
+  border-left: 3px solid var(--accent-purple);
+}
+
+.project-card--notebook .notebook-badge {
+  color: #c084fc;
+}
+
+.notebook-insight {
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.insight-label {
+  font-weight: 600;
+  color: #d8b4fe;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.insight-text {
+  color: var(--text-secondary);
 }
 
 .project-card__title {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.65rem;
+  line-height: 1.35;
 }
 
 .project-card__text {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .project-card__tags {
@@ -801,6 +1049,10 @@ button, input, textarea {
   color: var(--accent-cyan);
 }
 
+.project-card--notebook .project-link {
+  color: #c084fc;
+}
+
 .project-link .arrow {
   transition: transform var(--transition-fast);
 }
@@ -810,7 +1062,7 @@ button, input, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   10. Contact Section & Interactive Form
+   11. Contact Section & Interactive Form
    -------------------------------------------------------------------------- */
 .contact__grid {
   display: grid;
@@ -1002,7 +1254,7 @@ button, input, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   11. Footer & Back To Top
+   12. Footer & Back To Top
    -------------------------------------------------------------------------- */
 .site-footer {
   background: #060911;
@@ -1101,7 +1353,7 @@ button, input, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   12. Responsive Breakpoints
+   13. Responsive Breakpoints
    -------------------------------------------------------------------------- */
 @media (max-width: 900px) {
   .hero__content {
@@ -1129,6 +1381,10 @@ button, input, textarea {
 
   .contact__grid {
     grid-template-columns: 1fr;
+  }
+
+  .spotlight-card {
+    padding: 1.75rem;
   }
 }
 
@@ -1169,7 +1425,6 @@ button, input, textarea {
     pointer-events: auto;
   }
 
-  /* Hamburger transform into X when open */
   .nav-toggle.active .hamburger-bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
   }
@@ -1186,6 +1441,18 @@ button, input, textarea {
 
   .section {
     padding: 4rem 0;
+  }
+
+  .pipeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
   }
 
   .back-to-top {

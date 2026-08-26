@@ -12,15 +12,15 @@ Sviluppato con architettura moderna, semantica e leggera in **Vanilla JavaScript
 
 ## ✨ Caratteristiche Principali
 
-- 🎨 **Design Moderno & Tech**: Estetica scuro/cyan con effetti di glassmorphism, gradienti moderni e micro-interazioni fluide.
-- 📱 **Completamente Responsive**: Ottimizzato per dispositivi mobile, tablet, laptop e schermi ad alta risoluzione.
-- ⚡ **Zero Dipendenze / Performance Top**: Realizzato in puro Vanilla JS (ES6+) e CSS nativo per tempi di caricamento istantanei.
-- 🎯 **Filtro Progetti Dinamico**: Navigazione e filtraggio interattivo per categoria (*Data & Backend*, *Web & Frontend*).
+- 🎬 **Featured Case Study (NewBoxofficeProject)**: Sezione spotlight dedicata con infografica dei 4 step di pipeline ETL, metriche chiave e toggle per dettagli architetturali di schema SQL.
+- 📓 **Galleria Jupyter Notebooks & EDA**: Card dedicate all'analisi di dataset con insight di business, tag statistici e link ai notebook.
+- 🎯 **Filtro Progetti Dinamico**: Navigazione istantanea tra *Tutti i Lavori*, *🌟 NewBoxoffice Spotlight*, *📓 Dataset Notebooks & EDA* e *💻 Web Applications*.
+- 🎨 **Design Moderno Dark Tech**: Estetica scuro/cyan/viola con effetti di glassmorphism, gradienti moderni e micro-interazioni fluide.
 - 🧭 **ScrollSpy & Smooth Scroll**: La navigazione evidenzia dinamicamente la sezione attiva durante lo scorrimento.
-- 📋 **Click-to-Copy Email**: Copia rapida dell'indirizzo email con feedback visivo e gestione clipboard/fallback.
+- 📋 **Click-to-Copy Email**: Copia rapida dell'indirizzo email negli appunti con feedback visivo.
 - 📨 **Form di Contatto Interattivo**: Validazione client-side in tempo reale, gestione errori e simulazione asincrona con stato di caricamento.
+- 📱 **Completamente Responsive**: Ottimizzato per dispositivi mobile, tablet, laptop e schermi ad alta risoluzione.
 - ♿ **Accessibilità (A11y)**: Focus states visibili, supporto WAI-ARIA, contrasto verificato e rispetto di `prefers-reduced-motion`.
-- 🔍 **SEO & Social Ready**: Metadati Open Graph, schema semantico, favicon SVG integrata.
 
 ---
 
@@ -28,9 +28,9 @@ Sviluppato con architettura moderna, semantica e leggera in **Vanilla JavaScript
 
 ```text
 PortfolioSite/
-├── index.html        # Struttura semantica HTML5, metadati e sezioni
-├── style.css         # Stili CSS3, variabili personalizzate, layout responsive
-├── script.js         # Interattività JS (ScrollSpy, filtri, form, validazione)
+├── index.html        # Struttura semantica HTML5, Spotlight NewBoxofficeProject e Notebooks
+├── style.css         # Stili CSS3, variabili personalizzate, layout responsive e dark theme
+├── script.js         # Interattività JS (ScrollSpy, filtri, toggle pipeline, validazione)
 ├── .gitignore        # Esclusione file temporanei di sistema e IDE
 └── README.md         # Documentazione del progetto
 ```
@@ -39,10 +39,9 @@ PortfolioSite/
 
 ## 🛠️ Stack Tecnologico
 
-- **Markup**: HTML5 semantico
-- **Stile**: CSS3 (CSS Variables, Flexbox, CSS Grid, Glassmorphism, Media Queries)
-- **Logica & Interattività**: JavaScript (ES6+, IntersectionObserver, DOM API, Clipboard API)
-- **Tipografia**: [Inter](https://fonts.google.com/specimen/Inter) & [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)
+- **Data Management & Analytics**: Python, Pandas, SQL (PostgreSQL/MySQL), ETL Pipelines, Jupyter Lab, Seaborn/Matplotlib
+- **Web Development**: HTML5 Semantico, CSS3 Moderno (Grid, Flexbox, Variables), Vanilla JavaScript (ES6+)
+- **Metodologie & Versioning**: Git & GitHub, Schema Modeling, Data Cleaning, Responsive UI
 
 ---
 
@@ -65,18 +64,6 @@ Non richiede alcuna installazione di pacchetti o configurazione complessa.
      python -m http.server 3000
      ```
      e aprendo `http://localhost:3000` nel browser.
-
----
-
-## 🌐 Pubblicazione su GitHub Pages
-
-Questo repository è pronto al 100% per essere ospitato gratuitamente su **GitHub Pages**:
-
-1. Vai nella scheda **Settings** del repository su GitHub.
-2. Clicca su **Pages** nel menu laterale sinistro.
-3. Sotto **Build and deployment** / **Source**, seleziona `Deploy from a branch`.
-4. Seleziona il branch `main` e la cartella `/ (root)`.
-5. Clicca su **Save**. In pochi secondi il portfolio sarà online!
 
 ---
 

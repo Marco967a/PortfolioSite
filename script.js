@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileNavigation();
   initScrollSpy();
   initProjectFilters();
+  initSpotlightToggle();
   initCopyEmail();
   initContactForm();
   initBackToTop();
@@ -101,13 +102,14 @@ function initScrollSpy() {
 }
 
 /**
- * 4. Filtro interattivo per le categorie di progetti
+ * 4. Filtro interattivo per le categorie di progetti, Spotlight & Notebooks
  */
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll(".filter-btn");
   const projectCards = document.querySelectorAll(".project-card");
+  const spotlightCard = document.getElementById("boxofficeSpotlight");
 
-  if (!filterBtns.length || !projectCards.length) return;
+  if (!filterBtns.length) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -121,7 +123,17 @@ function initProjectFilters() {
 
       const filterValue = btn.getAttribute("data-filter");
 
-      // Filtra le card
+      // Gestione visibilità Spotlight Card
+      if (spotlightCard) {
+        const spotlightCat = spotlightCard.getAttribute("data-category") || "";
+        if (filterValue === "all" || filterValue === "boxoffice" || spotlightCat.includes(filterValue)) {
+          spotlightCard.classList.remove("hidden");
+        } else {
+          spotlightCard.classList.add("hidden");
+        }
+      }
+
+      // Filtra le card della griglia
       projectCards.forEach(card => {
         const cardCategories = card.getAttribute("data-category") || "";
         
@@ -136,7 +148,34 @@ function initProjectFilters() {
 }
 
 /**
- * 5. Copia rapida dell'indirizzo Email con notifica
+ * 5. Toggle per i dettagli tecnici della Pipeline NewBoxofficeProject
+ */
+function initSpotlightToggle() {
+  const toggleBtn = document.getElementById("togglePipelineDetails");
+  const detailsBox = document.getElementById("pipelineDetailsBox");
+  const btnText = document.getElementById("pipelineBtnText");
+
+  if (!toggleBtn || !detailsBox || !btnText) return;
+
+  toggleBtn.addEventListener("click", () => {
+    const isHidden = detailsBox.hasAttribute("hidden");
+
+    if (isHidden) {
+      detailsBox.removeAttribute("hidden");
+      btnText.textContent = "Nascondi Dettagli Architettura";
+      toggleBtn.classList.add("btn--primary");
+      toggleBtn.classList.remove("btn--ghost");
+    } else {
+      detailsBox.setAttribute("hidden", "");
+      btnText.textContent = "Dettagli Architettura & Query";
+      toggleBtn.classList.remove("btn--primary");
+      toggleBtn.classList.add("btn--ghost");
+    }
+  });
+}
+
+/**
+ * 6. Copia rapida dell'indirizzo Email con notifica
  */
 function initCopyEmail() {
   const copyBtn = document.getElementById("copyEmailBtn");
@@ -150,7 +189,6 @@ function initCopyEmail() {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(email);
       } else {
-        // Fallback per contesti non sicuri
         const textArea = document.createElement("textarea");
         textArea.value = email;
         textArea.style.position = "fixed";
@@ -162,7 +200,6 @@ function initCopyEmail() {
         textArea.remove();
       }
 
-      // Feedback visivo
       if (copyBtn.querySelector("span")) {
         copyBtn.querySelector("span").textContent = "Copiato negli appunti! ✓";
       }
@@ -183,7 +220,7 @@ function initCopyEmail() {
 }
 
 /**
- * 6. Validazione e invio form contatti con simulazione asincrona
+ * 7. Validazione e invio form contatti con simulazione asincrona
  */
 function initContactForm() {
   const form = document.getElementById("contactForm");
@@ -195,12 +232,11 @@ function initContactForm() {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    // Reset errori precedenti
+    // Reset errori
     clearErrors();
     formMessage.className = "form-message";
     formMessage.textContent = "";
 
-    // Estrazione e validazione campi
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const messageInput = document.getElementById("message");
@@ -230,11 +266,9 @@ function initContactForm() {
 
     if (!isValid) return;
 
-    // Stato di caricamento
     submitBtn.classList.add("is-loading");
     submitBtn.disabled = true;
 
-    // Simulazione invio (in produzione si può integrare con Formspree, EmailJS o API backend)
     setTimeout(() => {
       submitBtn.classList.remove("is-loading");
       submitBtn.disabled = false;
@@ -265,7 +299,7 @@ function initContactForm() {
 }
 
 /**
- * 7. Pulsante Floating "Torna su"
+ * 8. Pulsante Floating "Torna su"
  */
 function initBackToTop() {
   const backToTopBtn = document.getElementById("backToTop");
