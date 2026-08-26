@@ -5,71 +5,49 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/it/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Portfolio personale di **Marco Santagati** – *Data Manager & Web Developer*.  
-Sviluppato con architettura moderna, semantica e leggera in **Vanilla JavaScript**, **HTML5** e **CSS3 Moderno** (senza dipendenze esterne pesanti).
+Portfolio professionale di **Marco Santagati** – *Data Manager & Data Analyst*.  
+Sviluppato con architettura pulita, leggera e ad alte prestazioni in **HTML5 Semantico**, **CSS3 Moderno** e **Vanilla JavaScript**.
 
 ---
 
-## ✨ Caratteristiche Principali
+## ✨ Progetti in Evidenza
 
-- 🎬 **Featured Case Study (NewBoxofficeProject)**: Sezione spotlight dedicata con infografica dei 4 step di pipeline ETL, metriche chiave e toggle per dettagli architetturali di schema SQL.
-- 📓 **Galleria Jupyter Notebooks & EDA**: Card dedicate all'analisi di dataset con insight di business, tag statistici e link ai notebook.
-- 🎯 **Filtro Progetti Dinamico**: Navigazione istantanea tra *Tutti i Lavori*, *🌟 NewBoxoffice Spotlight*, *📓 Dataset Notebooks & EDA* e *💻 Web Applications*.
-- 🎨 **Design Moderno Dark Tech**: Estetica scuro/cyan/viola con effetti di glassmorphism, gradienti moderni e micro-interazioni fluide.
-- 🧭 **ScrollSpy & Smooth Scroll**: La navigazione evidenzia dinamicamente la sezione attiva durante lo scorrimento.
-- 📋 **Click-to-Copy Email**: Copia rapida dell'indirizzo email negli appunti con feedback visivo.
-- 📨 **Form di Contatto Interattivo**: Validazione client-side in tempo reale, gestione errori e simulazione asincrona con stato di caricamento.
-- 📱 **Completamente Responsive**: Ottimizzato per dispositivi mobile, tablet, laptop e schermi ad alta risoluzione.
-- ♿ **Accessibilità (A11y)**: Focus states visibili, supporto WAI-ARIA, contrasto verificato e rispetto di `prefers-reduced-motion`.
+### 🎬 Italian Box Office Monitoring
+Sistema di raccolta, normalizzazione e analisi quantitativa dei dati di botteghino cinematografico italiano e internazionale:
+- Pipeline ETL automatizzata in Python con Pandas.
+- Modellazione relazionale SQL (PostgreSQL/MySQL).
+- Monitoraggio trend, curve di tenuta (multiplier) e quote di mercato distributori.
 
----
-
-## 🗂️ Struttura del Progetto
-
-```text
-PortfolioSite/
-├── index.html        # Struttura semantica HTML5, Spotlight NewBoxofficeProject e Notebooks
-├── style.css         # Stili CSS3, variabili personalizzate, layout responsive e dark theme
-├── script.js         # Interattività JS (ScrollSpy, filtri, toggle pipeline, validazione)
-├── .gitignore        # Esclusione file temporanei di sistema e IDE
-└── README.md         # Documentazione del progetto
-```
+### 📓 Galleria Notebook EDA (Exploratory Data Analysis)
+Collezione di Jupyter Notebook dedicati all'analisi statistica ed esplorativa di dataset complessi:
+- **Box Office Revenue & Budget ROI Analysis**: Studio dei coefficienti di correlazione tra opening weekend, budget e incasso complessivo.
+- **Italian Cinema Distributors & Market Dynamics**: Analisi quantitativa della concentrazione del mercato cinematografico in Italia.
+- **Data Cleaning & Feature Engineering Pipeline**: Framework modulare per la bonifica, imputazione e trasformazione di dataset grezzi.
 
 ---
 
 ## 🛠️ Stack Tecnologico
 
 - **Data Management & Analytics**: Python, Pandas, SQL (PostgreSQL/MySQL), ETL Pipelines, Jupyter Lab, Seaborn/Matplotlib
-- **Web Development**: HTML5 Semantico, CSS3 Moderno (Grid, Flexbox, Variables), Vanilla JavaScript (ES6+)
-- **Metodologie & Versioning**: Git & GitHub, Schema Modeling, Data Cleaning, Responsive UI
+- **Web Interface**: HTML5 Semantico, CSS3 Moderno (CSS Grid, Flexbox, Variables), Vanilla JavaScript (ES6+)
+- **Metodologie**: Version Control (Git/GitHub), Data Cleaning, Normalizzazione Schemi
 
 ---
 
-## 🚀 Come visualizzare ed eseguire il progetto in locale
+## 🚀 Esecuzione in Locale
 
-Non richiede alcuna installazione di pacchetti o configurazione complessa.
-
-1. **Clona la repository**:
-   ```bash
-   git clone https://github.com/Marco967a/PortfolioSite.git
-   cd PortfolioSite
-   ```
-
-2. **Apri il file `index.html`**:
-   - Con doppio clic sul file `index.html` nel tuo file manager.
-   - Oppure usando l'estensione **Live Server** di VS Code.
-   - Oppure avviando un web server locale:
-     ```bash
-     # Con Python 3
-     python -m http.server 3000
-     ```
-     e aprendo `http://localhost:3000` nel browser.
+Non richiede dipendenze né build step:
+```bash
+git clone https://github.com/Marco967a/PortfolioSite.git
+cd PortfolioSite
+# Avvia un server locale o apri direttamente index.html
+python -m http.server 3000
+```
 
 ---
 
 ## 👤 Autore
 
 **Marco Santagati**
-- **Ruolo**: Data Manager & Web Developer
 - **GitHub**: [@Marco967a](https://github.com/Marco967a)
 - **Email**: [marco.santagati96@gmail.com](mailto:marco.santagati96@gmail.com)
