@@ -6,31 +6,33 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Portfolio professionale di **Marco Santagati** – *Data Manager & Data Analyst*.  
-Sviluppato con architettura pulita, leggera e ad alte prestazioni in **HTML5 Semantico**, **CSS3 Moderno** e **Vanilla JavaScript**.
+Sviluppato con architettura pulita, leggera e performante in **HTML5 Semantico**, **CSS3 Moderno** e **Vanilla JavaScript**.
 
 ---
 
 ## ✨ Progetti in Evidenza
 
 ### 🎬 Italian Box Office Monitoring
-Sistema di raccolta, normalizzazione e analisi quantitativa dei dati di botteghino cinematografico italiano e internazionale:
+Sistema per l'acquisizione, normalizzazione e analisi quantitativa dei dati di botteghino cinematografico in Italia:
 - Pipeline ETL automatizzata in Python con Pandas.
 - Modellazione relazionale SQL (PostgreSQL/MySQL).
 - Monitoraggio trend, curve di tenuta (multiplier) e quote di mercato distributori.
 
-### 📓 Galleria Notebook EDA (Exploratory Data Analysis)
-Collezione di Jupyter Notebook dedicati all'analisi statistica ed esplorativa di dataset complessi:
-- **Box Office Revenue & Budget ROI Analysis**: Studio dei coefficienti di correlazione tra opening weekend, budget e incasso complessivo.
-- **Italian Cinema Distributors & Market Dynamics**: Analisi quantitativa della concentrazione del mercato cinematografico in Italia.
-- **Data Cleaning & Feature Engineering Pipeline**: Framework modulare per la bonifica, imputazione e trasformazione di dataset grezzi.
+### 📓 EDA Projects (Exploratory Data Analysis)
+- **Box Office Revenue & Budget ROI Analysis**: Studio dei coefficienti di correlazione tra opening weekend, budget di produzione e incasso complessivo.
+- **Italian Cinema Distributors & Market Dynamics**: Analisi quantitativa della concentrazione del mercato cinematografico in Italia con indici di Gini e curve di Lorenz.
+
+### 🤖 Machine Learning Projects
+- **Box Office Revenue & Multiplier Prediction**: Modello di regressione supervisionata (Random Forest, Ridge) per la stima dell'incasso finale (R²: 0.84).
+- **Movie Performance & Tier Classification**: Classificatore multi-classe per categorizzare il rendimento commerciale partendo da feature ingegnerizzate (Accuratezza: 79%).
 
 ---
 
 ## 🛠️ Stack Tecnologico
 
-- **Data Management & Analytics**: Python, Pandas, SQL (PostgreSQL/MySQL), ETL Pipelines, Jupyter Lab, Seaborn/Matplotlib
+- **Data Management & Databases**: SQL (PostgreSQL/MySQL), ETL Pipelines, Relational Modeling, Schema Optimization
+- **Data Science & ML**: Python, Pandas, NumPy, Scikit-Learn (Regression, Classification), Jupyter Lab, Seaborn/Matplotlib
 - **Web Interface**: HTML5 Semantico, CSS3 Moderno (CSS Grid, Flexbox, Variables), Vanilla JavaScript (ES6+)
-- **Metodologie**: Version Control (Git/GitHub), Data Cleaning, Normalizzazione Schemi
 
 ---
 

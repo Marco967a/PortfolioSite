@@ -28,6 +28,7 @@
   --accent-cyan: #38bdf8;
   --accent-cyan-hover: #7dd3fc;
   --accent-purple: #a855f7;
+  --accent-emerald: #10b981;
   --accent-glow: rgba(56, 189, 248, 0.15);
   --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
   
@@ -843,7 +844,7 @@ button, input, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   10. Projects Grid & Notebook Cards
+   10. Projects Grid, EDA & Machine Learning Cards
    -------------------------------------------------------------------------- */
 .projects-filter {
   display: flex;
@@ -911,21 +912,20 @@ button, input, textarea {
 .project-card__badge {
   font-family: var(--font-mono);
   font-size: 0.73rem;
-  color: var(--accent-cyan);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
-/* Notebook Card Specifics */
-.project-card--notebook {
+/* EDA Specific Styles */
+.project-card--eda {
   border-left: 3px solid var(--accent-purple);
 }
 
-.project-card--notebook .notebook-badge {
+.eda-badge {
   color: #c084fc;
 }
 
-.notebook-insight {
+.eda-insight {
   background: rgba(168, 85, 247, 0.06);
   border: 1px solid rgba(168, 85, 247, 0.18);
   border-radius: var(--radius-sm);
@@ -935,11 +935,45 @@ button, input, textarea {
   line-height: 1.45;
 }
 
-.insight-label {
+.eda-insight .insight-label {
   font-weight: 600;
   color: #d8b4fe;
   display: block;
   margin-bottom: 0.15rem;
+}
+
+.project-link--eda {
+  color: #c084fc;
+}
+
+/* Machine Learning Specific Styles */
+.project-card--ml {
+  border-left: 3px solid var(--accent-emerald);
+}
+
+.ml-badge {
+  color: #34d399;
+}
+
+.ml-insight {
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.8rem;
+  margin-bottom: 1.15rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.ml-insight .insight-label {
+  font-weight: 600;
+  color: #6ee7b7;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.project-link--ml {
+  color: #34d399;
 }
 
 .insight-text {
@@ -980,7 +1014,6 @@ button, input, textarea {
   gap: 0.45rem;
   font-size: 0.88rem;
   font-weight: 600;
-  color: #c084fc;
 }
 
 .project-link .arrow {
