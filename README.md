@@ -6,7 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Portfolio professionale di **Marco Santagati** – *Data Manager & Data Analyst*.  
-Sviluppato con architettura pulita, leggera e performante in **HTML5 Semantico**, **CSS3 Moderno** e **Vanilla JavaScript**.
+Sviluppato con architettura pulita, leggera e performante in **HTML5 Semantico**, **CSS3 Moderno** e **Vanilla JavaScript**.  
+Il sito include sezioni dedicate a formazione, esperienza, case study e un bottone di download del CV per una presentazione professionale più completa.
 
 ---
 
