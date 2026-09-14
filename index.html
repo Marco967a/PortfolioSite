@@ -38,9 +38,9 @@
         <a href="#home" class="nav__link active">Home</a>
         <a href="#about" class="nav__link">Chi sono</a>
         <a href="#skills" class="nav__link">Competenze</a>
-        <a href="#certifications" class="nav__link">Formazione</a>
-        <a href="#experience" class="nav__link">Esperienza</a>
         <a href="#projects" class="nav__link">Progetti</a>
+        <a href="#experience" class="nav__link">Esperienza</a>
+        <a href="#certifications" class="nav__link">Formazione</a>
         <a href="#contact" class="nav__link">Contatti</a>
       </nav>
 
@@ -67,7 +67,7 @@
           </div>
 
           <h1 class="hero__title">
-            Ciao, sono <span class="gradient-text">Marco Santagati</span>
+            Ciao, sono <span class="hero__name">Marco Santagati</span>
           </h1>
           <p class="hero__subtitle">Data Manager &amp; Data Analyst</p>
           
@@ -86,20 +86,20 @@
               </svg>
               Esplora i progetti
             </a>
-            <a href="#contact" class="btn btn--ghost">
-              <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              Contattami
-            </a>
-            <a href="files/Marco_Santagati_CV.pdf" class="btn btn--ghost" download>
+            <a href="files/Marco_Santagati_CV.pdf" class="btn btn--secondary" download>
               <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 3v12"></path>
                 <path d="M7 18l5 5 5-5"></path>
                 <path d="M5 21h14"></path>
               </svg>
               Scarica CV
+            </a>
+            <a href="#contact" class="btn btn--ghost">
+              <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contattami
             </a>
           </div>
 
@@ -122,20 +122,40 @@
         </div>
 
         <div class="hero__image-wrapper">
-          <div class="hero__avatar-card">
-            <div class="hero__avatar">
-              <span>MS</span>
+          <div class="hero__data-card">
+            <div class="data-card__status">
+              <span class="status-indicator"></span>
+              <span class="status-text">DATA ARCHITECTURE &amp; ANALYTICS</span>
             </div>
-            <div class="avatar-info">
-              <span class="avatar-name">Marco Santagati</span>
-              <span class="avatar-role">Data Management &amp; Analytics</span>
+            
+            <div class="data-card__profile">
+              <div class="data-card__avatar">MS</div>
+              <div class="data-card__bio">
+                <span class="data-card__name">Marco Santagati</span>
+                <span class="data-card__title">Data Management &amp; Analytics</span>
+              </div>
             </div>
-            <div class="avatar-tags">
-              <span class="tag">SQL</span>
-              <span class="tag">Python</span>
-              <span class="tag">ETL</span>
-              <span class="tag">EDA</span>
-              <span class="tag">Machine Learning</span>
+
+            <div class="data-card__metrics">
+              <div class="data-metric">
+                <span class="metric-val">10K+</span>
+                <span class="metric-lbl">Record Gestiti</span>
+              </div>
+              <div class="data-metric">
+                <span class="metric-val">100%</span>
+                <span class="metric-lbl">Integrità SQL</span>
+              </div>
+              <div class="data-metric">
+                <span class="metric-val">0.84 R²</span>
+                <span class="metric-lbl">Stima ML</span>
+              </div>
+            </div>
+
+            <div class="data-card__tags">
+              <span class="tag">SQL Relazionale</span>
+              <span class="tag">Pipeline ETL</span>
+              <span class="tag">Python &amp; Pandas</span>
+              <span class="tag">Scikit-Learn</span>
             </div>
           </div>
         </div>
@@ -168,7 +188,13 @@
 
           <div class="about__features">
             <div class="feature-item">
-              <div class="feature-icon">📊</div>
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
               <div class="feature-text">
                 <h4>Data Architecture &amp; Schemi SQL</h4>
                 <p>Progettazione schemi relazionali (PostgreSQL/MySQL), ottimizzazione query e integrità referenziale.</p>
@@ -176,7 +202,14 @@
             </div>
 
             <div class="feature-item">
-              <div class="feature-icon">📓</div>
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                  <line x1="2" y1="20" x2="22" y2="20"></line>
+                </svg>
+              </div>
               <div class="feature-text">
                 <h4>EDA Projects (Exploratory Data Analysis)</h4>
                 <p>Analisi esplorativa su dataset con Python (Pandas, Seaborn), studio delle distribuzioni, trend e metriche di business.</p>
@@ -184,7 +217,12 @@
             </div>
 
             <div class="feature-item">
-              <div class="feature-icon">🤖</div>
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
               <div class="feature-text">
                 <h4>Machine Learning Projects</h4>
                 <p>Modellazione predittiva, feature engineering, regressione e classificazione con Scikit-Learn.</p>
@@ -210,7 +248,13 @@
           <!-- Categoria 1: Data Management & Analytics -->
           <div class="skill-card">
             <div class="skill-card__header">
-              <div class="skill-card__icon">📈</div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
               <h3>Data Management &amp; Databases</h3>
             </div>
             <ul class="skill-card__list">
@@ -236,7 +280,11 @@
           <!-- Categoria 2: Python & Data Science -->
           <div class="skill-card">
             <div class="skill-card__header">
-              <div class="skill-card__icon">🐍</div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
               <h3>EDA &amp; Machine Learning</h3>
             </div>
             <ul class="skill-card__list">
@@ -262,7 +310,12 @@
           <!-- Categoria 3: Strumenti & Workflow -->
           <div class="skill-card">
             <div class="skill-card__header">
-              <div class="skill-card__icon">🛠️</div>
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
               <h3>Strumenti &amp; Workflow</h3>
             </div>
             <ul class="skill-card__list">
@@ -283,110 +336,6 @@
                 <span class="skill-level">Avanzato</span>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sezione Certificazioni / Corsi / Formazione -->
-    <section class="section section--alt" id="certifications">
-      <div class="container">
-        <div class="section-header">
-          <span class="section__tag">Formazione</span>
-          <h2 class="section__title">Certificazioni, Corsi &amp; Formazione</h2>
-          <p class="section__subtitle">
-            Percorsi formativi e competenze trasversali che mi hanno permesso di costruire solide basi in data management, analisi e machine learning
-          </p>
-        </div>
-
-        <div class="cert-grid">
-          <article class="cert-card">
-            <span class="cert-card__year">2024</span>
-            <h3>SQL for Data Analysis</h3>
-            <p>Query avanzate, aggregazioni, join, modellazione relazionale e ottimizzazione del dato.</p>
-          </article>
-          <article class="cert-card">
-            <span class="cert-card__year">2024</span>
-            <h3>Python for Analytics</h3>
-            <p>Analisi dati, automazione ETL e manipolazione di dataset complessi con Python e librerie scientifiche.</p>
-          </article>
-          <article class="cert-card">
-            <span class="cert-card__year">2023</span>
-            <h3>Data Visualization &amp; Reporting</h3>
-            <p>Costruzione di dashboard e storytelling analitico con visualizzazione efficiente dell’informazione.</p>
-          </article>
-          <article class="cert-card">
-            <span class="cert-card__year">2023</span>
-            <h3>Relational Data Modeling</h3>
-            <p>Normalizzazione, schema relazionale, integrità referenziale e progettazione su dati business-oriented.</p>
-          </article>
-          <article class="cert-card">
-            <span class="cert-card__year">2022</span>
-            <h3>Exploratory Data Analysis</h3>
-            <p>Profiling dati, distribuzioni, trend, outlier analysis e interpretazione dei risultati.</p>
-          </article>
-          <article class="cert-card">
-            <span class="cert-card__year">2022</span>
-            <h3>Machine Learning Foundations</h3>
-            <p>Regressione, classificazione, feature engineering e valutazione delle performance dei modelli.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sezione Esperienza -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section__tag">Esperienza</span>
-          <h2 class="section__title">Esperienza professionale</h2>
-          <p class="section__subtitle">
-            Costruzione di soluzioni orientate al dato, ottimizzazione dei processi e analisi che supportano decisioni concrete
-          </p>
-        </div>
-
-        <div class="experience-grid">
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div class="timeline-content">
-                <span class="timeline-period">2022 — Presente</span>
-                <h3>Data Manager &amp; Data Analyst</h3>
-                <p>Gestione di dataset complessi, pipeline ETL, modellazione relazionale e analisi quantitativa per progetti di business intelligence e monitoraggio performance.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div class="timeline-content">
-                <span class="timeline-period">2021 — 2022</span>
-                <h3>Data Analysis &amp; Reporting</h3>
-                <p>Analisi dei trend di mercato, creazione di KPI, reportistica e supporto alle decisioni tramite dati strutturati e dashboard.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div class="timeline-content">
-                <span class="timeline-period">2020 — 2021</span>
-                <h3>Business Intelligence &amp; ETL</h3>
-                <p>Sviluppo e manutenzione di processi di ingestione, trasformazione e aggregazione dati per analisi operative e progetti di monitoring evolutivi.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="experience-cta">
-            <div class="experience-card">
-              <div class="experience-card__icon">📌</div>
-              <h3>Come lavoro</h3>
-              <p>
-                Mi occupo di trasformare dati grezzi in informazioni utili, combinando approccio analitico, competenze SQL/Python e una visione orientata al business.
-              </p>
-              <ul>
-                <li>Progettazione di schema dati e pipeline ETL</li>
-                <li>Analisi esplorativa e KPI di business</li>
-                <li>Machine learning applicato a problemi reali</li>
-                <li>Supporto decisionale basato su evidenze</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -415,7 +364,18 @@
         <div class="spotlight-card" data-category="boxoffice data" id="boxofficeSpotlight">
           <div class="spotlight-header">
             <div class="spotlight-badge">
-              <span class="badge-icon">🎬</span>
+              <span class="badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                  <line x1="7" y1="2" x2="7" y2="22"></line>
+                  <line x1="17" y1="2" x2="17" y2="22"></line>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <line x1="2" y1="7" x2="7" y2="7"></line>
+                  <line x1="2" y1="17" x2="7" y2="17"></line>
+                  <line x1="17" y1="17" x2="22" y2="17"></line>
+                  <line x1="17" y1="7" x2="22" y2="7"></line>
+                </svg>
+              </span>
               <span>Case Study &bull; Data Engineering &amp; Analytics</span>
             </div>
             <h3 class="spotlight-title">Italian Box Office Monitoring</h3>
@@ -528,7 +488,13 @@
           <!-- EDA Project 1: Box Office Revenue & ROI -->
           <article class="project-card project-card--eda" data-category="eda data boxoffice">
             <div class="project-card__badge-wrapper">
-              <span class="project-card__badge eda-badge">📓 EDA Project &bull; Revenue Analysis</span>
+              <span class="project-card__badge eda-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>EDA Project &bull; Revenue Analysis</span>
+              </span>
             </div>
             <div class="project-card__content">
               <h3 class="project-card__title">Box Office Revenue &amp; Budget ROI Analysis</h3>
@@ -538,7 +504,14 @@
               </p>
 
               <div class="notebook-insight eda-insight">
-                <span class="insight-label">💡 Key Insight:</span>
+                <span class="insight-label">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  Key Insight:
+                </span>
                 <span class="insight-text">Identificazione dei cluster di redditività per fascia di budget e analisi della stagionalità dei picchi di mercato.</span>
               </div>
 
@@ -564,7 +537,13 @@
           <!-- EDA Project 2: Cinema Distributors Dynamics -->
           <article class="project-card project-card--eda" data-category="eda data boxoffice">
             <div class="project-card__badge-wrapper">
-              <span class="project-card__badge eda-badge">📓 EDA Project &bull; Market Dynamics</span>
+              <span class="project-card__badge eda-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>EDA Project &bull; Market Dynamics</span>
+              </span>
             </div>
             <div class="project-card__content">
               <h3 class="project-card__title">Italian Cinema Distributors &amp; Market Dynamics</h3>
@@ -574,7 +553,14 @@
               </p>
 
               <div class="notebook-insight eda-insight">
-                <span class="insight-label">💡 Key Insight:</span>
+                <span class="insight-label">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  Key Insight:
+                </span>
                 <span class="insight-text">Analisi della concentrazione di mercato e correlazione tra numero di copie in sala e ricavo medio per schermo.</span>
               </div>
 
@@ -600,7 +586,21 @@
           <!-- ML Project 1: Box Office Multiplier & Revenue Prediction -->
           <article class="project-card project-card--ml" data-category="ml data boxoffice">
             <div class="project-card__badge-wrapper">
-              <span class="project-card__badge ml-badge">🤖 Machine Learning &bull; Regression</span>
+              <span class="project-card__badge ml-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+                <span>Machine Learning &bull; Regression</span>
+              </span>
             </div>
             <div class="project-card__content">
               <h3 class="project-card__title">Box Office Revenue &amp; Multiplier Prediction</h3>
@@ -610,7 +610,12 @@
               </p>
 
               <div class="notebook-insight ml-insight">
-                <span class="insight-label">💡 Model Performance:</span>
+                <span class="insight-label">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                  Model Performance:
+                </span>
                 <span class="insight-text">Random Forest Regressor raggiunge un R² di 0.84 con feature importance trainata su copie in sala, genere e punteggio critico.</span>
               </div>
 
@@ -636,7 +641,21 @@
           <!-- ML Project 2: Movie Performance & Rating Classification -->
           <article class="project-card project-card--ml" data-category="ml data">
             <div class="project-card__badge-wrapper">
-              <span class="project-card__badge ml-badge">🤖 Machine Learning &bull; Classification</span>
+              <span class="project-card__badge ml-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+                <span>Machine Learning &bull; Classification</span>
+              </span>
             </div>
             <div class="project-card__content">
               <h3 class="project-card__title">Movie Performance &amp; Tier Classification</h3>
@@ -646,7 +665,12 @@
               </p>
 
               <div class="notebook-insight ml-insight">
-                <span class="insight-label">💡 Model Performance:</span>
+                <span class="insight-label">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                  Model Performance:
+                </span>
                 <span class="insight-text">Accuratezza del 79% con matrice di confusione bilanciata e ottimizzazione degli iperparametri tramite GridSearch cross-validation.</span>
               </div>
 
@@ -672,32 +696,111 @@
       </div>
     </section>
 
-    <!-- Sezione Insights / Blog (base per crescita futura) -->
-    <section class="section section--alt" id="insights">
+    <!-- Sezione Esperienza -->
+    <section class="section section--alt" id="experience">
       <div class="container">
         <div class="section-header">
-          <span class="section__tag">Insights</span>
-          <h2 class="section__title">Blog e approfondimenti</h2>
+          <span class="section__tag">Esperienza</span>
+          <h2 class="section__title">Esperienza professionale</h2>
           <p class="section__subtitle">
-            Una base per condividere riflessioni su SQL, ETL, EDA e machine learning in contesti reali
+            Costruzione di soluzioni orientate al dato, ottimizzazione dei processi e analisi che supportano decisioni concrete
           </p>
         </div>
 
-        <div class="insights-grid">
-          <article class="insight-card">
-            <span class="insight-label">SQL</span>
-            <h3>Come costruire query efficaci per analisi di mercato</h3>
-            <p>Strategie per semplificare aggregazioni, analisi temporali e reporting su dataset complessi.</p>
+        <div class="experience-grid">
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <span class="timeline-period">2022 — Presente</span>
+                <h3>Data Manager &amp; Data Analyst</h3>
+                <p>Gestione di dataset complessi, pipeline ETL, modellazione relazionale e analisi quantitativa per progetti di business intelligence e monitoraggio performance.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <span class="timeline-period">2021 — 2022</span>
+                <h3>Data Analysis &amp; Reporting</h3>
+                <p>Analisi dei trend di mercato, creazione di KPI, reportistica e supporto alle decisioni tramite dati strutturati e dashboard.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <span class="timeline-period">2020 — 2021</span>
+                <h3>Business Intelligence &amp; ETL</h3>
+                <p>Sviluppo e manutenzione di processi di ingestione, trasformazione e aggregazione dati per analisi operative e progetti di monitoring evolutivi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-cta">
+            <div class="experience-card">
+              <div class="experience-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3>Metodologia di Lavoro</h3>
+              <p>
+                Mi occupo di trasformare dati grezzi in informazioni ad alto valore operativo, combinando rigore ingegneristico, competenze SQL/Python e orientamento ai risultati.
+              </p>
+              <ul>
+                <li>Progettazione schemi dati e pipeline ETL automatizzate</li>
+                <li>Analisi esplorativa e monitoraggio KPI di business</li>
+                <li>Machine Learning supervisionato per stime predittive</li>
+                <li>Supporto decisionale basato su evidenze quantitative</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Certificazioni / Corsi / Formazione -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section__tag">Formazione</span>
+          <h2 class="section__title">Certificazioni, Corsi &amp; Formazione</h2>
+          <p class="section__subtitle">
+            Percorsi formativi e competenze specialistiche in data management, analisi quantitativa e machine learning
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card">
+            <span class="cert-card__year">2024</span>
+            <h3>SQL for Data Analysis</h3>
+            <p>Query avanzate, aggregazioni analitiche, join complesse, modellazione relazionale e ottimizzazione delle performance.</p>
           </article>
-          <article class="insight-card">
-            <span class="insight-label">ETL</span>
-            <h3>Da dati grezzi a pipeline strutturata</h3>
-            <p>Principi fondamentali per costruire processi puliti, scalabili e affidabili nella gestione del dato.</p>
+          <article class="cert-card">
+            <span class="cert-card__year">2024</span>
+            <h3>Python for Analytics</h3>
+            <p>Analisi quantitativa, automazione ETL e manipolazione di dataset complessi con Python e relative librerie di calcolo.</p>
           </article>
-          <article class="insight-card">
-            <span class="insight-label">ML</span>
-            <h3>Quando la modellazione predittiva aggiunge valore reale</h3>
-            <p>Come scegliere feature, ottimizzare metriche e trasformare insight in decisioni concrete.</p>
+          <article class="cert-card">
+            <span class="cert-card__year">2023</span>
+            <h3>Data Visualization &amp; Reporting</h3>
+            <p>Costruzione di dashboard e storytelling analitico con visualizzazione efficiente dell’informazione.</p>
+          </article>
+          <article class="cert-card">
+            <span class="cert-card__year">2023</span>
+            <h3>Relational Data Modeling</h3>
+            <p>Normalizzazione, schema relazionale ER, vincoli di integrità referenziale e progettazione orientata al business.</p>
+          </article>
+          <article class="cert-card">
+            <span class="cert-card__year">2022</span>
+            <h3>Exploratory Data Analysis</h3>
+            <p>Profiling dati, studio delle distribuzioni, trend temporali, outlier analysis e sintesi statistica.</p>
+          </article>
+          <article class="cert-card">
+            <span class="cert-card__year">2022</span>
+            <h3>Machine Learning Foundations</h3>
+            <p>Modelli di regressione, classificazione, feature engineering e metriche di valutazione delle performance.</p>
           </article>
         </div>
       </div>
@@ -818,6 +921,8 @@
         <a href="#about">Chi sono</a>
         <a href="#skills">Competenze</a>
         <a href="#projects">Progetti</a>
+        <a href="#experience">Esperienza</a>
+        <a href="#certifications">Formazione</a>
         <a href="#contact">Contatti</a>
       </div>
 
