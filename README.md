@@ -49,8 +49,19 @@ python -m http.server 3000
 
 ---
 
+## 📬 Configurazione Form Contatti
+
+Il modulo di contatto in `index.html` utilizza una chiamata asincrona `fetch()` verso un endpoint **Formspree** (con campo antispam *Honeypot* integrato):
+1. Registrati gratuitamente su [formspree.io](https://formspree.io) inserendo la tua email di ricezione.
+2. Crea un form e copia l'endpoint generato (es. `https://formspree.io/f/xvgozqab`).
+3. Sostituisci `YOUR_FORM_ID` nell'attributo `action` di `<form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID">` in `index.html`.
+
+---
+
 ## 👤 Autore
 
 **Marco Santagati**
 - **GitHub**: [@Marco967a](https://github.com/Marco967a)
+- **LinkedIn**: [Marco Santagati](https://www.linkedin.com/in/marco-santagati)
 - **Email**: [marco.santagati96@gmail.com](mailto:marco.santagati96@gmail.com)
+

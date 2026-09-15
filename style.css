@@ -1434,6 +1434,60 @@ button, input, textarea {
   border: 1px solid rgba(239, 68, 68, 0.25);
 }
 
+.form-message a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Honeypot antispam trap invisibile */
+.honeypot-field {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.form-privacy-note {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.85rem;
+  line-height: 1.45;
+}
+
+.form-privacy-note svg {
+  flex-shrink: 0;
+  color: var(--accent-cyan);
+}
+
+.form-fallback-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  text-align: center;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.form-fallback-text a {
+  color: var(--accent-cyan);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.form-fallback-text a:hover {
+  text-decoration: underline;
+}
+
+
 /* --------------------------------------------------------------------------
    12. Footer & Back To Top
    -------------------------------------------------------------------------- */

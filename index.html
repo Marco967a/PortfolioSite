@@ -857,6 +857,21 @@
 
             <div class="contact-card">
               <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div class="contact-card__details">
+                <h4>LinkedIn</h4>
+                <p>Marco Santagati</p>
+                <a href="https://www.linkedin.com/in/marco-santagati" target="_blank" rel="noopener noreferrer" class="link-external">
+                  Connettiti su LinkedIn &rarr;
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
@@ -871,16 +886,22 @@
           </div>
 
           <!-- Form di Contatto -->
-          <form class="contact-form" id="contactForm" novalidate>
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xqpkrvzr" method="POST" novalidate>
+            <!-- Campo Honeypot antispam nascosto per bot -->
+            <div class="honeypot-field" aria-hidden="true">
+              <label for="_gotcha">Non compilare questo campo</label>
+              <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off" />
+            </div>
+
             <div class="form-row">
               <div class="form-field">
                 <label for="name">Nome completo <span class="required">*</span></label>
-                <input type="text" id="name" name="name" placeholder="Mario Rossi" required />
+                <input type="text" id="name" name="name" placeholder="Mario Rossi" autocomplete="name" required />
                 <span class="field-error" id="nameError"></span>
               </div>
               <div class="form-field">
                 <label for="email">Email di contatto <span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="mario.rossi@example.com" required />
+                <input type="email" id="email" name="email" placeholder="mario.rossi@example.com" autocomplete="email" required />
                 <span class="field-error" id="emailError"></span>
               </div>
             </div>
@@ -901,7 +922,18 @@
               <span class="btn-spinner" aria-hidden="true"></span>
             </button>
 
+            <p class="form-privacy-note">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>I dati inviati saranno utilizzati esclusivamente per rispondere alla richiesta, nel rispetto della privacy.</span>
+            </p>
+
             <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
+
+            <p class="form-fallback-text">
+              Preferisci il client di posta tradizionale? <a href="mailto:marco.santagati96@gmail.com">Scrivimi direttamente &rarr;</a>
+            </p>
           </form>
         </div>
       </div>
