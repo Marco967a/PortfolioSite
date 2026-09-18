@@ -1,0 +1,9 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio statico di Marco Santagati - server di anteprima locale",
+  "scripts": {
+    "dev": "node serve.mjs"
+  }
+}

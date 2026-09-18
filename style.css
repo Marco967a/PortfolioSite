@@ -7,36 +7,37 @@
    1. CSS Custom Properties / Design Tokens
    -------------------------------------------------------------------------- */
 :root {
-  /* Colors: Tech Minimal High Contrast */
-  --bg-main: #07090e;
-  --bg-surface: #0d111a;
-  --bg-surface-hover: #131926;
-  --bg-card: #0d111a;
-  --bg-card-hover: #131926;
-  --bg-alt: #090c13;
-  --bg-glass: rgba(7, 9, 14, 0.92);
-  --bg-spotlight: #0b0f17;
-  
-  --border-subtle: #1c2436;
-  --border-card: #222d42;
-  --border-card-hover: #38bdf8;
-  --border-spotlight: #28354f;
-  --border-focus: #38bdf8;
+  /* Colors: Light theme - Clean & Readable (testo nero, accento blu acciaio) */
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-alt: #f1f5f9;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-spotlight: #f1f5f9;
 
-  --text-primary: #ffffff;
-  --text-secondary: #e2e8f0;
-  --text-muted: #94a3b8;
-  --text-dark: #07090e;
+  --border-subtle: #e2e8f0;
+  --border-card: #cbd5e1;
+  --border-card-hover: #0284c7;
+  --border-spotlight: #e2e8f0;
+  --border-focus: #0284c7;
 
-  --accent-cyan: #38bdf8;
-  --accent-cyan-hover: #7dd3fc;
-  --accent-cyan-soft: rgba(56, 189, 248, 0.08);
-  --accent-cyan-border: rgba(56, 189, 248, 0.25);
-  
-  --success: #10b981;
-  --success-soft: rgba(16, 185, 129, 0.12);
-  --danger: #ef4444;
-  --danger-soft: rgba(239, 68, 68, 0.12);
+  --text-primary: #0a0a0a;
+  --text-secondary: #1e293b;
+  --text-muted: #475569;
+  --text-dark: #0a0a0a;
+
+  --accent-cyan: #0284c7;
+  --accent-cyan-hover: #075985;
+  --accent-cyan-soft: rgba(2, 132, 199, 0.07);
+  --accent-cyan-border: rgba(2, 132, 199, 0.25);
+  --accent-gradient: linear-gradient(120deg, #0284c7 0%, #075985 100%);
+
+  --success: #059669;
+  --success-soft: rgba(5, 150, 105, 0.1);
+  --danger: #dc2626;
+  --danger-soft: rgba(220, 38, 38, 0.1);
 
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -44,15 +45,15 @@
 
   /* Layout & Sizing */
   --container-max: 1040px;
-  --header-height: 68px;
+  --header-height: 80px;
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
   --radius-full: 9999px;
 
   /* Shadows & Transitions */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.1);
   --transition-fast: 0.18s ease;
   --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -71,7 +72,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 1.5rem);
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -294,15 +295,15 @@ button, input, textarea {
 .nav {
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .nav__link {
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--text-muted);
   position: relative;
-  padding: 0.4rem 0;
+  padding: 0.5rem 0.25rem;
   transition: color var(--transition-fast);
 }
 
