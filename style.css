@@ -8,36 +8,59 @@
    1. CSS Custom Properties / Design Tokens
    -------------------------------------------------------------------------- */
 :root {
-  /* Colors: Tech Minimal High Contrast */
-  --bg-main: #07090e;
-  --bg-surface: #0d111a;
-  --bg-surface-hover: #131926;
-  --bg-card: #0d111a;
-  --bg-card-hover: #131926;
-  --bg-alt: #090c13;
-  --bg-glass: rgba(7, 9, 14, 0.92);
-  --bg-spotlight: #0b0f17;
-  
-  --border-subtle: #1c2436;
-  --border-card: #222d42;
-  --border-card-hover: #38bdf8;
-  --border-spotlight: #28354f;
-  --border-focus: #38bdf8;
+  /* Canvas & Alternating Section Backgrounds (Toni caldi & naturali modernizzati) */
+  --bg-main: #FAF8F5;          /* Warm Ivory / Avorio - Hero, Competenze, Esperienza */
+  --bg-alt: #F3EFEA;           /* Soft Sand / Sabbia - Chi sono, Progetti, Formazione */
+  --bg-contrast: #EDE7DF;      /* Warm Greige / Lino - Sezione Contatti */
+  --bg-surface: #FFFFFF;       /* Pure White per Card & Componenti sopraelevati */
+  --bg-surface-hover: #FCFBF9; /* Feedback hover sulle card */
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FAF7F2;
+  --bg-spotlight: #FFFFFF;
+  --bg-glass: rgba(250, 248, 245, 0.9);
+  --bg-footer: #16191D;        /* Dark Graphite Deep per ancorare il footer */
 
-  --text-primary: #ffffff;
-  --text-secondary: #e2e8f0;
-  --text-muted: #94a3b8;
-  --text-dark: #07090e;
+  /* Bordi & Divisori */
+  --border-subtle: #E5DFD5;
+  --border-card: #E5DFD5;
+  --border-card-hover: #D4CBC0;
+  --border-spotlight: #DDD5C9;
+  --border-focus: #1C4E5E;
 
-  --accent-cyan: #38bdf8;
-  --accent-cyan-hover: #7dd3fc;
-  --accent-cyan-soft: rgba(56, 189, 248, 0.08);
-  --accent-cyan-border: rgba(56, 189, 248, 0.25);
-  
-  --success: #10b981;
-  --success-soft: rgba(16, 185, 129, 0.12);
-  --danger: #ef4444;
-  --danger-soft: rgba(239, 68, 68, 0.12);
+  /* Tipografia ad Alto Contrasto (Dark Graphite & Charcoal) */
+  --text-primary: #181B1F;     /* Grafite scuro profondo per titoli, KPI e nomi */
+  --text-secondary: #3C4147;   /* Antracite bilanciato per body copy e paragrafi */
+  --text-muted: #686E77;       /* Grigio neutro per date, metadati e label */
+  --text-dark: #181B1F;
+  --text-on-dark: #FAF8F5;
+  --text-on-accent: #FFFFFF;
+
+  /* Call to Action Principale - Scarica CV (Arancione Bruciato Esclusivo) */
+  --cta-primary: #C85A32;
+  --cta-primary-hover: #B24D28;
+  --cta-primary-active: #9B3F1E;
+  --cta-primary-soft: rgba(200, 90, 50, 0.12);
+  --cta-primary-border: rgba(200, 90, 50, 0.3);
+  --cta-primary-shadow: rgba(200, 90, 50, 0.28);
+
+  /* Elementi Secondari & Analitici - Blu Petrolio */
+  --accent-petrol: #1C4E5E;
+  --accent-petrol-hover: #143B48;
+  --accent-petrol-soft: #EAF2F5;
+  --accent-petrol-border: #C0D8E0;
+  --accent-petrol-shadow: rgba(28, 78, 94, 0.22);
+
+  /* Status, Precisione & Tag - Verde Salvia Scuro */
+  --accent-sage: #2D5943;
+  --accent-sage-hover: #234735;
+  --accent-sage-soft: #EDF4F0;
+  --accent-sage-border: #C6DCD0;
+
+  /* Feedback Semantico */
+  --success: #2D5943;
+  --success-soft: #EDF4F0;
+  --danger: #D33833;
+  --danger-soft: #FDF1F0;
 
   /* Tipografia */
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -51,9 +74,10 @@
   --radius-lg: 14px;
   --radius-full: 9999px;
 
-  /* Shadows & Transitions */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  /* Ombre discrete (Clean Dashboard Style) */
+  --shadow-sm: 0 1px 3px rgba(24, 27, 31, 0.05), 0 1px 2px rgba(24, 27, 31, 0.03);
+  --shadow-md: 0 4px 14px rgba(24, 27, 31, 0.06), 0 1px 3px rgba(24, 27, 31, 0.04);
+  --shadow-lg: 0 10px 28px rgba(24, 27, 31, 0.08), 0 2px 6px rgba(24, 27, 31, 0.04);
   --transition-fast: 0.18s ease;
   --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -72,6 +96,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 1.5rem);
+  color-scheme: light;
   color-scheme: light;
 }
 
