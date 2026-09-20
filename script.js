@@ -122,7 +122,7 @@ function initSpotlightToggle() {
 }
 
 /**
- * 6. Copia rapida dell'indirizzo Email con notifica
+ * 5. Copia rapida dell'indirizzo Email con notifica
  */
 function initCopyEmail() {
   const copyBtn = document.getElementById("copyEmailBtn");
@@ -150,15 +150,13 @@ function initCopyEmail() {
       if (copyBtn.querySelector("span")) {
         copyBtn.querySelector("span").textContent = "Copiato negli appunti! ✓";
       }
-      copyBtn.style.borderColor = "var(--accent-cyan)";
-      copyBtn.style.color = "#34d399";
+      copyBtn.classList.add("is-copied");
 
       setTimeout(() => {
         if (copyBtn.querySelector("span")) {
           copyBtn.querySelector("span").textContent = originalText;
         }
-        copyBtn.style.borderColor = "";
-        copyBtn.style.color = "";
+        copyBtn.classList.remove("is-copied");
       }, 2500);
     } catch (err) {
       console.error("Impossibile copiare l'email: ", err);
@@ -167,7 +165,7 @@ function initCopyEmail() {
 }
 
 /**
- * 7. Validazione e invio asincrono del form contatti (Formspree / Web3Forms)
+ * 6. Validazione e invio asincrono del form contatti (Formspree / Web3Forms)
  */
 function initContactForm() {
   const form = document.getElementById("contactForm");
@@ -320,7 +318,7 @@ function initContactForm() {
 }
 
 /**
- * 8. Pulsante Floating "Torna su"
+ * 7. Pulsante Floating "Torna su"
  */
 function initBackToTop() {
   const backToTopBtn = document.getElementById("backToTop");

@@ -1265,6 +1265,12 @@ button, input, textarea {
   border-color: var(--accent-petrol);
 }
 
+.copy-btn.is-copied {
+  background: var(--accent-sage-soft);
+  border-color: var(--accent-sage);
+  color: var(--accent-sage);
+}
+
 .link-external {
   font-size: 0.85rem;
   color: var(--accent-petrol);
