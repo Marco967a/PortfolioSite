@@ -6,13 +6,13 @@
   <meta name="description" content="Portfolio professionale di Marco Santagati - Data Manager. Italian Box Office Monitoring, EDA Projects e Machine Learning Projects." />
   <meta name="author" content="Marco Santagati" />
   <meta name="keywords" content="Marco Santagati, Data Manager, Italian Box Office Monitoring, EDA Projects, Machine Learning Projects, Python, SQL, Pandas, Scikit-Learn, Portfolio" />
-  
+
   <!-- Open Graph / Meta Social -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Marco Santagati | Data Manager &amp; Analytics" />
   <meta property="og:description" content="Portfolio di Marco Santagati: Italian Box Office Monitoring, EDA Projects, Machine Learning Projects, pipeline ETL e SQL." />
   <meta property="og:url" content="https://github.com/Marco967a/PortfolioSite" />
-  
+
   <title>Marco Santagati | Data Manager &amp; Analytics</title>
 
   <!-- Favicon SVG -->
@@ -26,27 +26,43 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Sprite icone SVG (riusate con <use>) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-chevron-up" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></symbol>
+  </svg>
+
   <!-- Header / Navbar -->
   <header class="site-header" id="siteHeader">
     <div class="container header-content">
-      <a href="#home" class="logo" aria-label="Marco Santagati Homepage">
+      <a href="#home" class="logo" aria-label="Marco Santagati - Inizio pagina">
         <span class="logo__icon">MS</span>
         <span class="logo__text">Marco<span class="accent">Santagati</span></span>
       </a>
 
       <nav class="nav" id="mainNav" aria-label="Navigazione principale">
-        <a href="#home" class="nav__link active">Home</a>
-        <a href="#about" class="nav__link">Chi sono</a>
-        <a href="#skills" class="nav__link">Competenze</a>
         <a href="#projects" class="nav__link">Progetti</a>
+        <a href="#skills" class="nav__link">Competenze</a>
         <a href="#experience" class="nav__link">Esperienza</a>
         <a href="#certifications" class="nav__link">Formazione</a>
-        <a href="#contact" class="nav__link">Contatti</a>
+        <a href="files/Marco_Santagati_CV.pdf" class="nav__link nav__link--mobile" download>Scarica CV</a>
       </nav>
 
       <div class="header-actions">
-        <a href="files/Marco_Santagati_CV.pdf" class="btn btn--sm btn--cv header-cta" download>Scarica CV</a>
-        <a href="#contact" class="btn btn--sm btn--primary header-cta">Scrivimi</a>
+        <a href="files/Marco_Santagati_CV.pdf" class="btn btn--outline btn--sm header-cv" download>Scarica CV</a>
+        <a href="#contact" class="btn btn--cta btn--sm">Contattami</a>
         <button class="nav-toggle" id="navToggle" aria-label="Apri o chiudi menu" aria-expanded="false" aria-controls="mainNav">
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
@@ -63,59 +79,50 @@
         <div class="hero__text">
           <div class="hero__badge">
             <span class="badge-dot"></span>
-            <span>Disponibile per nuove opportunità</span>
+            <span>Disponibile da subito &middot; Italia &middot; Ibrido / Full remote</span>
           </div>
 
-          <h1 class="hero__title">
-            Ciao, sono <span class="hero__name">Marco Santagati</span>
-          </h1>
-          <p class="hero__subtitle">Data Manager &amp; Data Analyst</p>
-          
+          <h1 class="hero__title">Marco Santagati</h1>
+          <p class="hero__subtitle">Data Manager &amp; Data Analyst <span class="hero__level">&middot; Junior</span></p>
+
           <p class="hero__description">
-            Specializzato in <strong>gestione del dato, architetture ETL e analisi quantitative</strong>. 
-            Progetto pipeline end-to-end come <strong>Italian Box Office Monitoring</strong> e sviluppo notebook dedicati a 
-            <strong>EDA Projects</strong> e modelli predittivi in <strong>Machine Learning Projects</strong>.
+            Costruisco pipeline ETL e database SQL affidabili, poi li trasformo in analisi e modelli predittivi.
+            Ultimo progetto: <strong>Italian Box Office Monitoring</strong>, dallo scraping ai KPI.
           </p>
 
+          <div class="hero__tags" aria-label="Competenze principali">
+            <span class="tag">SQL Relazionale</span>
+            <span class="tag">Pipeline ETL</span>
+            <span class="tag">Python &amp; Pandas</span>
+            <span class="tag">Scikit-Learn</span>
+          </div>
+
           <div class="hero__actions">
-            <a href="#projects" class="btn btn--primary">
-              <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
-              </svg>
-              Esplora i progetti
+            <a href="#contact" class="btn btn--cta btn--lg">
+              <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg>
+              Contattami
             </a>
-            <a href="files/Marco_Santagati_CV.pdf" class="btn btn--cv" download>
-              <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3v12"></path>
-                <path d="M7 18l5 5 5-5"></path>
-                <path d="M5 21h14"></path>
-              </svg>
+            <a href="files/Marco_Santagati_CV.pdf" class="btn btn--outline btn--lg" download>
+              <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#i-download"/></svg>
               Scarica CV
             </a>
-            <a href="#contact" class="btn btn--ghost">
-              <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              Contattami
+            <a href="#projects" class="btn btn--link">
+              Vedi i progetti
+              <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-arrow-down"/></svg>
             </a>
           </div>
 
           <div class="hero__socials">
-            <span class="hero__socials-label">Link rapidi:</span>
             <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="social-link" title="Profilo GitHub">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-              </svg>
+              <svg class="icon icon--fill" width="18" height="18" aria-hidden="true"><use href="#i-github"/></svg>
               <span>GitHub</span>
             </a>
+            <a href="https://www.linkedin.com/in/marco-santagati" target="_blank" rel="noopener noreferrer" class="social-link" title="Profilo LinkedIn">
+              <svg class="icon icon--fill" width="18" height="18" aria-hidden="true"><use href="#i-linkedin"/></svg>
+              <span>LinkedIn</span>
+            </a>
             <a href="mailto:marco.santagati96@gmail.com" class="social-link" title="Invia un'email">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
+              <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg>
               <span>Email</span>
             </a>
           </div>
@@ -125,650 +132,317 @@
           <div class="hero__data-card">
             <div class="data-card__status">
               <span class="status-indicator"></span>
-              <span class="status-text">DATA ARCHITECTURE &amp; ANALYTICS</span>
+              <span class="status-text">Italian Box Office Monitoring</span>
             </div>
-            
-            <div class="data-card__profile">
-              <div class="data-card__avatar">MS</div>
-              <div class="data-card__bio">
-                <span class="data-card__name">Marco Santagati</span>
-                <span class="data-card__title">Data Management &amp; Analytics</span>
-              </div>
-            </div>
+
+            <ol class="mini-pipeline" aria-label="Fasi della pipeline dati">
+              <li><span class="node">1</span>Ingestion</li>
+              <li><span class="node">2</span>ETL</li>
+              <li><span class="node">3</span>SQL</li>
+              <li><span class="node">4</span>KPI</li>
+            </ol>
 
             <div class="data-card__metrics">
               <div class="data-metric">
                 <span class="metric-val">10K+</span>
-                <span class="metric-lbl">Record Gestiti</span>
+                <span class="metric-lbl">record incassi</span>
               </div>
               <div class="data-metric">
                 <span class="metric-val">100%</span>
-                <span class="metric-lbl">Integrità SQL</span>
+                <span class="metric-lbl">integrità referenziale</span>
               </div>
               <div class="data-metric">
-                <span class="metric-val">0.84 R²</span>
-                <span class="metric-lbl">Stima ML</span>
+                <span class="metric-val">0.84</span>
+                <span class="metric-lbl">R&sup2; Random Forest</span>
               </div>
             </div>
 
-            <div class="data-card__tags">
-              <span class="tag">SQL Relazionale</span>
-              <span class="tag">Pipeline ETL</span>
-              <span class="tag">Python &amp; Pandas</span>
-              <span class="tag">Scikit-Learn</span>
-            </div>
+            <a href="#boxofficeSpotlight" class="data-card__link">Vedi il case study &rarr;</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Sezione Chi Sono -->
-    <section class="section section--alt" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section__tag">Profilo</span>
-          <h2 class="section__title">Chi sono</h2>
-          <p class="section__subtitle">
-            Esperienza nella gestione del dato, pipeline relazionali, analisi esplorativa e modellazione predittiva
-          </p>
-        </div>
-
-        <div class="about__grid">
-          <div class="about__bio">
-            <h3>Visione &amp; Metodologia</h3>
-            <p>
-              Opero come <strong>Data Manager</strong> con un approccio incentrato sull'accuratezza del dato, sulla scalabilità dei modelli relazionali 
-              e sulla trasformazione di dataset complessi in insight strategici.
-            </p>
-            <p>
-              Sviluppo architetture di dati end-to-end come <strong>Italian Box Office Monitoring</strong> e conduco analisi approfondite suddivise 
-              in <strong>EDA Projects</strong> (Exploratory Data Analysis) e <strong>Machine Learning Projects</strong> (regressione, classificazione e stima di performance).
-            </p>
-          </div>
-
-          <div class="about__features">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                </svg>
-              </div>
-              <div class="feature-text">
-                <h4>Data Architecture &amp; Schemi SQL</h4>
-                <p>Progettazione schemi relazionali (PostgreSQL/MySQL), ottimizzazione query e integrità referenziale.</p>
-              </div>
-            </div>
-
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="18" y1="20" x2="18" y2="10"></line>
-                  <line x1="12" y1="20" x2="12" y2="4"></line>
-                  <line x1="6" y1="20" x2="6" y2="14"></line>
-                  <line x1="2" y1="20" x2="22" y2="20"></line>
-                </svg>
-              </div>
-              <div class="feature-text">
-                <h4>EDA Projects (Exploratory Data Analysis)</h4>
-                <p>Analisi esplorativa su dataset con Python (Pandas, Seaborn), studio delle distribuzioni, trend e metriche di business.</p>
-              </div>
-            </div>
-
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="3"></circle>
-                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                </svg>
-              </div>
-              <div class="feature-text">
-                <h4>Machine Learning Projects</h4>
-                <p>Modellazione predittiva, feature engineering, regressione e classificazione con Scikit-Learn.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sezione Competenze (Tech Stack) -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section__tag">Stack Tecnologico</span>
-          <h2 class="section__title">Competenze &amp; Strumenti</h2>
-          <p class="section__subtitle">
-            Le tecnologie con cui realizzo pipeline dati, conduco analisi esplorative e alleno modelli predittivi
-          </p>
-        </div>
-
-        <div class="skills__grid">
-          <!-- Categoria 1: Data Management & Analytics -->
-          <div class="skill-card">
-            <div class="skill-card__header">
-              <div class="skill-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                </svg>
-              </div>
-              <h3>Data Management &amp; Databases</h3>
-            </div>
-            <ul class="skill-card__list">
-              <li>
-                <span class="skill-name">SQL (PostgreSQL, MySQL)</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Pipeline ETL &amp; Ingestion Dati</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Modellazione Schemi ER &amp; Normalizzazione</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Integrità Dati &amp; De-duplicazione</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Categoria 2: Python & Data Science -->
-          <div class="skill-card">
-            <div class="skill-card__header">
-              <div class="skill-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                </svg>
-              </div>
-              <h3>EDA &amp; Machine Learning</h3>
-            </div>
-            <ul class="skill-card__list">
-              <li>
-                <span class="skill-name">Python (Pandas, NumPy)</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Notebook EDA &amp; Data Profiling</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Machine Learning (Scikit-Learn)</span>
-                <span class="skill-level">Intermedio / Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Data Visualization (Matplotlib, Seaborn)</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Categoria 3: Strumenti & Workflow -->
-          <div class="skill-card">
-            <div class="skill-card__header">
-              <div class="skill-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="4 17 10 11 4 5"></polyline>
-                  <line x1="12" y1="19" x2="20" y2="19"></line>
-                </svg>
-              </div>
-              <h3>Strumenti &amp; Workflow</h3>
-            </div>
-            <ul class="skill-card__list">
-              <li>
-                <span class="skill-name">Git &amp; GitHub (Version Control)</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Jupyter Lab &amp; VS Code</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Feature Engineering &amp; Data Prep</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-              <li>
-                <span class="skill-name">Analisi Quantitativa &amp; KPI</span>
-                <span class="skill-level">Avanzato</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sezione Progetti: Italian Box Office Monitoring, EDA & ML Projects -->
+    <!-- Sezione Progetti -->
     <section class="section section--alt" id="projects">
       <div class="container">
         <div class="section-header">
-          <span class="section__tag">Progetti &amp; Lavori</span>
-          <h2 class="section__title">Italian Box Office, EDA &amp; Machine Learning</h2>
-          <p class="section__subtitle">
-            Dalla pipeline dati di Italian Box Office Monitoring ai notebook di Exploratory Data Analysis e Machine Learning
-          </p>
+          <h2 class="section__title">Progetti</h2>
+          <p class="section__subtitle">Un case study end-to-end e quattro notebook di analisi</p>
         </div>
 
-        <!-- Filtri Progetti -->
-        <div class="projects-filter" role="tablist" aria-label="Filtro progetti">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tutti</button>
-          <button class="filter-btn" data-filter="boxoffice" role="tab" aria-selected="false">Italian Box Office Monitoring</button>
-          <button class="filter-btn" data-filter="eda" role="tab" aria-selected="false">EDA Projects</button>
-          <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false">Machine Learning Projects</button>
-        </div>
-
-        <!-- 1. SPOTLIGHT CASE STUDY: Italian Box Office Monitoring -->
-        <div class="spotlight-card" data-category="boxoffice data" id="boxofficeSpotlight">
-          <div class="spotlight-header">
-            <div class="spotlight-badge">
-              <span class="badge-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-                  <line x1="7" y1="2" x2="7" y2="22"></line>
-                  <line x1="17" y1="2" x2="17" y2="22"></line>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <line x1="2" y1="7" x2="7" y2="7"></line>
-                  <line x1="2" y1="17" x2="7" y2="17"></line>
-                  <line x1="17" y1="17" x2="22" y2="17"></line>
-                  <line x1="17" y1="7" x2="22" y2="7"></line>
-                </svg>
-              </span>
-              <span>Case Study &bull; Data Engineering &amp; Analytics</span>
-            </div>
+        <!-- Case study: Italian Box Office Monitoring -->
+        <article class="spotlight-card" id="boxofficeSpotlight">
+          <header class="spotlight-header">
+            <span class="spotlight-badge">Case study &bull; Data Engineering &amp; Analytics</span>
             <h3 class="spotlight-title">Italian Box Office Monitoring</h3>
-            <p class="spotlight-tagline">
-              End-to-End Data Pipeline, Relational Modeling &amp; Box Office Intelligence
+            <p class="spotlight-tagline">End-to-End Data Pipeline, Relational Modeling &amp; Box Office Intelligence</p>
+            <p class="spotlight-desc">
+              Acquisizione, normalizzazione e analisi dei dati di botteghino in Italia: scraping periodico da feed eterogenei,
+              ETL con Python e Pandas, schema relazionale SQL e calcolo di quote di mercato e multiplier.
             </p>
+          </header>
+
+          <div class="spotlight-kpis">
+            <div class="kpi-box">
+              <span class="kpi-value">10K+</span>
+              <span class="kpi-label">record e incassi gestiti</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-value">100%</span>
+              <span class="kpi-label">integrità referenziale SQL</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-value">4 dim.</span>
+              <span class="kpi-label">tempo, genere, distributore, budget</span>
+            </div>
           </div>
 
-          <div class="spotlight-body">
-            <div class="spotlight-desc">
-              <p>
-                <strong>Italian Box Office Monitoring</strong> è un sistema per l'acquisizione, normalizzazione e analisi quantitativa 
-                dei dati di botteghino cinematografico in Italia. Implementa una pipeline dati robusta: scraping automatico periodico da feed eterogenei, 
-                pulizia e trasformazione ETL con Python e Pandas, archiviazione in schema relazionale SQL e calcolo di indicatori chiave di performance (quote di mercato e multiplier).
-              </p>
-            </div>
+          <ol class="pipeline">
+            <li class="pipeline-step">
+              <span class="step-num">01</span>
+              <h4>Data Ingestion</h4>
+              <p>Scraping automatico da feed eterogenei</p>
+            </li>
+            <li class="pipeline-step">
+              <span class="step-num">02</span>
+              <h4>Cleaning &amp; ETL</h4>
+              <p>Valute, date, generi e deduplicazione con Pandas</p>
+            </li>
+            <li class="pipeline-step">
+              <span class="step-num">03</span>
+              <h4>Relational Database</h4>
+              <p>Film, Incassi, Sale e Distributori</p>
+            </li>
+            <li class="pipeline-step">
+              <span class="step-num">04</span>
+              <h4>Analytics &amp; KPI</h4>
+              <p>Multiplier, stagionalità e quote di mercato</p>
+            </li>
+          </ol>
 
-            <!-- Pipeline Steps Infographic -->
-            <div class="pipeline-grid">
-              <div class="pipeline-step">
-                <div class="step-num">01</div>
-                <div class="step-content">
-                  <h4>Data Ingestion</h4>
-                  <p>Estrazione automatizzata da feed e fonti eterogenee del box office.</p>
-                </div>
-              </div>
-
-              <div class="pipeline-step">
-                <div class="step-num">02</div>
-                <div class="step-content">
-                  <h4>Cleaning &amp; ETL</h4>
-                  <p>Conversione valute, formati data, mapping generi e deduplicazione con Python &amp; Pandas.</p>
-                </div>
-              </div>
-
-              <div class="pipeline-step">
-                <div class="step-num">03</div>
-                <div class="step-content">
-                  <h4>Relational Database</h4>
-                  <p>Schema relazionale SQL strutturato con tabelle Film, Incassi, Sale e Distributori.</p>
-                </div>
-              </div>
-
-              <div class="pipeline-step">
-                <div class="step-num">04</div>
-                <div class="step-content">
-                  <h4>Analytics &amp; KPI</h4>
-                  <p>Aggregazioni analitiche, calcolo multiplier di longevità, stagionalità e quote di mercato.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Key Metrics Highlights -->
-            <div class="spotlight-kpis">
-              <div class="kpi-box">
-                <span class="kpi-value">10K+</span>
-                <span class="kpi-label">Record &amp; Incassi Gestiti</span>
-              </div>
-              <div class="kpi-box">
-                <span class="kpi-value">100%</span>
-                <span class="kpi-label">Integrità Referenziale SQL</span>
-              </div>
-              <div class="kpi-box">
-                <span class="kpi-value">4 Dim.</span>
-                <span class="kpi-label">Analisi (Tempo, Genere, Distributore, Budget)</span>
-              </div>
-            </div>
-
-            <!-- Tech Tags -->
-            <div class="spotlight-tags">
-              <span class="tag">Python</span>
-              <span class="tag">SQL (PostgreSQL/MySQL)</span>
-              <span class="tag">Pandas</span>
-              <span class="tag">ETL Pipeline</span>
-              <span class="tag">Data Modeling</span>
-              <span class="tag">Analytics</span>
-            </div>
+          <div class="spotlight-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL (PostgreSQL/MySQL)</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">ETL Pipeline</span>
+            <span class="tag">Data Modeling</span>
           </div>
 
           <div class="spotlight-footer">
-            <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="btn btn--primary" aria-label="Visualizza repository su GitHub">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-              </svg>
-              <span>Repository GitHub</span>
+            <a href="https://github.com/Marco967a/NewBoxofficeProject" target="_blank" rel="noopener noreferrer" class="btn btn--primary" aria-label="Vedi il repository NewBoxofficeProject su GitHub">
+              <svg class="icon icon--fill" width="18" height="18" aria-hidden="true"><use href="#i-github"/></svg>
+              <span>Vedi il repository</span>
               <span class="arrow">&rarr;</span>
             </a>
-            <button type="button" class="btn btn--ghost" id="togglePipelineDetails">
-              <span id="pipelineBtnText">Dettagli Architettura &amp; Query</span>
+            <button type="button" class="btn btn--link" id="togglePipelineDetails" aria-expanded="false" aria-controls="pipelineDetailsBox">
+              <span id="pipelineBtnText">Dettagli architettura &amp; query</span>
             </button>
           </div>
 
-          <!-- Expandable Technical Details -->
           <div class="spotlight-expanded" id="pipelineDetailsBox" hidden>
             <div class="expanded-content">
-              <h4>Dettagli Strutturali dello Schema Dati</h4>
+              <h4>Dettagli strutturali dello schema dati</h4>
               <p>Modellazione tabellare ottimizzata per aggregazioni temporali e query analitiche:</p>
               <ul class="expanded-list">
                 <li><strong>Fact Table:</strong> <code>fact_boxoffice_weekly</code> (ID film, data, sala, incasso lordo/netto, presenze).</li>
                 <li><strong>Dimension Tables:</strong> <code>dim_movies</code>, <code>dim_distributors</code>, <code>dim_theaters</code>, <code>dim_dates</code>.</li>
-                <li><strong>Pipeline di Aggiornamento:</strong> Script Python con validazione schema, de-duplicazione e upsert incrementale.</li>
+                <li><strong>Pipeline di aggiornamento:</strong> script Python con validazione schema, de-duplicazione e upsert incrementale.</li>
               </ul>
             </div>
           </div>
+        </article>
+
+        <!-- Notebook EDA & Machine Learning -->
+        <div class="projects__grid" id="projectsGrid">
+
+          <article class="project-card">
+            <span class="project-card__badge">
+              <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-book"/></svg>
+              EDA &bull; Revenue Analysis
+            </span>
+            <h3 class="project-card__title">Box Office Revenue &amp; Budget ROI Analysis</h3>
+            <p class="project-card__text">Correlazione tra budget di produzione, opening weekend e tenuta complessiva in sala.</p>
+            <div class="result">
+              <span class="result__label">Focus dell'analisi</span>
+              <span class="result__text">Cluster di redditività per fascia di budget e stagionalità dei picchi di mercato.</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Seaborn</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__badge">
+              <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-book"/></svg>
+              EDA &bull; Market Dynamics
+            </span>
+            <h3 class="project-card__title">Italian Cinema Distributors &amp; Market Dynamics</h3>
+            <p class="project-card__text">Quote di mercato dei distributori in Italia, concentrazione degli incassi e confronto tra major e cinema indipendente.</p>
+            <div class="result">
+              <span class="result__label">Focus dell'analisi</span>
+              <span class="result__text">Concentrazione di mercato e correlazione tra numero di copie in sala e ricavo medio per schermo.</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--ml">
+            <span class="project-card__badge">
+              <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-cpu"/></svg>
+              Machine Learning &bull; Regression
+            </span>
+            <h3 class="project-card__title">Box Office Revenue &amp; Multiplier Prediction</h3>
+            <p class="project-card__text">Regressione supervisionata per stimare l'incasso finale dai dati del primo weekend e dalle feature distributive.</p>
+            <div class="result result--metric">
+              <span class="result__value">R&sup2; 0.84</span>
+              <span class="result__text">Random Forest Regressor; feature principali: copie in sala, genere e punteggio critico.</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Random Forest</span>
+              <span class="tag">Regression</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--ml">
+            <span class="project-card__badge">
+              <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-cpu"/></svg>
+              Machine Learning &bull; Classification
+            </span>
+            <h3 class="project-card__title">Movie Performance &amp; Tier Classification</h3>
+            <p class="project-card__text">Classificazione supervisionata dei titoli in fasce di rendimento (Blockbuster, Moderate, Niche) da metadati e feature ingegnerizzate.</p>
+            <div class="result result--metric">
+              <span class="result__value">79%</span>
+              <span class="result__text">Accuratezza, con matrice di confusione bilanciata e iperparametri ottimizzati via GridSearch cross-validation.</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Classification</span>
+              <span class="tag">Feature Engineering</span>
+            </div>
+          </article>
         </div>
 
-        <!-- 2. GRID PROGETTI NOTEBOOK (EDA & MACHINE LEARNING) -->
-        <div class="projects__grid" id="projectsGrid">
-          
-          <!-- EDA Project 1: Box Office Revenue & ROI -->
-          <article class="project-card project-card--eda" data-category="eda data boxoffice">
-            <div class="project-card__badge-wrapper">
-              <span class="project-card__badge eda-badge">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                </svg>
-                <span>EDA Project &bull; Revenue Analysis</span>
-              </span>
-            </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Box Office Revenue &amp; Budget ROI Analysis</h3>
-              <p class="project-card__text">
-                Analisi esplorativa dei fattori determinanti per il successo al botteghino: correlazione tra budget di produzione, 
-                opening weekend e curve di tenuta complessiva in sala.
-              </p>
+        <p class="projects__more">
+          Altri notebook di analisi:
+          <a href="https://github.com/Marco967a/Portfolio_Notebooks" target="_blank" rel="noopener noreferrer" class="link-external">Portfolio_Notebooks su GitHub &rarr;</a>
+        </p>
 
-              <div class="notebook-insight eda-insight">
-                <span class="insight-label">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="12"></line>
-                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                  </svg>
-                  Key Insight:
-                </span>
-                <span class="insight-text">Identificazione dei cluster di redditività per fascia di budget e analisi della stagionalità dei picchi di mercato.</span>
-              </div>
+        <!-- Fascia CTA dopo la prova -->
+        <div class="cta-band">
+          <div>
+            <h3>Ti interessa il mio approccio?</h3>
+            <p>Parliamone: rispondo volentieri a proposte di lavoro e progetti data-driven.</p>
+          </div>
+          <a href="#contact" class="btn btn--cta btn--lg">
+            <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg>
+            Contattami
+          </a>
+        </div>
+      </div>
+    </section>
 
-              <div class="project-card__tags">
-                <span class="tag">Python</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">Seaborn</span>
-                <span class="tag">EDA</span>
-                <span class="tag">Box Office</span>
-              </div>
-            </div>
-            <div class="project-card__footer notebook-actions">
-              <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="project-link project-link--eda" aria-label="Visualizza Notebook su GitHub">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                <span>Notebook GitHub</span>
-                <span class="arrow">&rarr;</span>
-              </a>
-            </div>
-          </article>
+    <!-- Sezione Competenze -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section__title">Competenze &amp; Strumenti</h2>
+          <p class="section__subtitle">Le tecnologie che ho usato nei progetti qui sopra</p>
+        </div>
 
-          <!-- EDA Project 2: Cinema Distributors Dynamics -->
-          <article class="project-card project-card--eda" data-category="eda data boxoffice">
-            <div class="project-card__badge-wrapper">
-              <span class="project-card__badge eda-badge">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                </svg>
-                <span>EDA Project &bull; Market Dynamics</span>
-              </span>
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <svg class="icon skill-card__icon" width="22" height="22" aria-hidden="true"><use href="#i-database"/></svg>
+              <h3>Data Management &amp; Databases</h3>
             </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Italian Cinema Distributors &amp; Market Dynamics</h3>
-              <p class="project-card__text">
-                Studio quantitativo sulle quote di mercato dei distributori cinematografici in Italia, concentrazione degli incassi 
-                e dinamiche comparative tra major e cinema indipendente.
-              </p>
+            <div class="skill-card__chips">
+              <span class="tag">SQL (PostgreSQL, MySQL)</span>
+              <span class="tag">Pipeline ETL &amp; Ingestion</span>
+              <span class="tag">Modellazione ER &amp; Normalizzazione</span>
+              <span class="tag">Integrità &amp; De-duplicazione</span>
+            </div>
+            <a href="#boxofficeSpotlight" class="skill-card__used">Usato in: Italian Box Office Monitoring &rarr;</a>
+          </div>
 
-              <div class="notebook-insight eda-insight">
-                <span class="insight-label">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="12"></line>
-                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                  </svg>
-                  Key Insight:
-                </span>
-                <span class="insight-text">Analisi della concentrazione di mercato e correlazione tra numero di copie in sala e ricavo medio per schermo.</span>
-              </div>
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <svg class="icon skill-card__icon" width="22" height="22" aria-hidden="true"><use href="#i-activity"/></svg>
+              <h3>EDA &amp; Machine Learning</h3>
+            </div>
+            <div class="skill-card__chips">
+              <span class="tag">Python (Pandas, NumPy)</span>
+              <span class="tag">EDA &amp; Data Profiling</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Matplotlib, Seaborn</span>
+            </div>
+            <a href="#projectsGrid" class="skill-card__used">Usato in: EDA &amp; Machine Learning Projects &rarr;</a>
+          </div>
 
-              <div class="project-card__tags">
-                <span class="tag">SQL</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">Matplotlib</span>
-                <span class="tag">Market Share</span>
-                <span class="tag">EDA</span>
-              </div>
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <svg class="icon skill-card__icon" width="22" height="22" aria-hidden="true"><use href="#i-terminal"/></svg>
+              <h3>Strumenti &amp; Workflow</h3>
             </div>
-            <div class="project-card__footer notebook-actions">
-              <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="project-link project-link--eda" aria-label="Visualizza Notebook su GitHub">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                <span>Notebook GitHub</span>
-                <span class="arrow">&rarr;</span>
-              </a>
+            <div class="skill-card__chips">
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">Jupyter Lab &amp; VS Code</span>
+              <span class="tag">Feature Engineering</span>
+              <span class="tag">Analisi quantitativa &amp; KPI</span>
             </div>
-          </article>
-
-          <!-- ML Project 1: Box Office Multiplier & Revenue Prediction -->
-          <article class="project-card project-card--ml" data-category="ml data boxoffice">
-            <div class="project-card__badge-wrapper">
-              <span class="project-card__badge ml-badge">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                  <rect x="9" y="9" width="6" height="6"></rect>
-                  <line x1="9" y1="1" x2="9" y2="4"></line>
-                  <line x1="15" y1="1" x2="15" y2="4"></line>
-                  <line x1="9" y1="20" x2="9" y2="23"></line>
-                  <line x1="15" y1="20" x2="15" y2="23"></line>
-                  <line x1="20" y1="9" x2="23" y2="9"></line>
-                  <line x1="20" y1="14" x2="23" y2="14"></line>
-                  <line x1="1" y1="9" x2="4" y2="9"></line>
-                  <line x1="1" y1="14" x2="4" y2="14"></line>
-                </svg>
-                <span>Machine Learning &bull; Regression</span>
-              </span>
-            </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Box Office Revenue &amp; Multiplier Prediction</h3>
-              <p class="project-card__text">
-                Modello predittivo di regressione supervisionata per stimare l'incasso finale dei film al botteghino 
-                a partire dai dati di apertura del primo weekend e feature distributive.
-              </p>
-
-              <div class="notebook-insight ml-insight">
-                <span class="insight-label">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                  </svg>
-                  Model Performance:
-                </span>
-                <span class="insight-text">Random Forest Regressor raggiunge un R² di 0.84 con feature importance trainata su copie in sala, genere e punteggio critico.</span>
-              </div>
-
-              <div class="project-card__tags">
-                <span class="tag">Scikit-Learn</span>
-                <span class="tag">Random Forest</span>
-                <span class="tag">Regression</span>
-                <span class="tag">Python</span>
-                <span class="tag">Machine Learning</span>
-              </div>
-            </div>
-            <div class="project-card__footer notebook-actions">
-              <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="project-link project-link--ml" aria-label="Visualizza Notebook su GitHub">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                <span>Notebook GitHub</span>
-                <span class="arrow">&rarr;</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- ML Project 2: Movie Performance & Rating Classification -->
-          <article class="project-card project-card--ml" data-category="ml data">
-            <div class="project-card__badge-wrapper">
-              <span class="project-card__badge ml-badge">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                  <rect x="9" y="9" width="6" height="6"></rect>
-                  <line x1="9" y1="1" x2="9" y2="4"></line>
-                  <line x1="15" y1="1" x2="15" y2="4"></line>
-                  <line x1="9" y1="20" x2="9" y2="23"></line>
-                  <line x1="15" y1="20" x2="15" y2="23"></line>
-                  <line x1="20" y1="9" x2="23" y2="9"></line>
-                  <line x1="20" y1="14" x2="23" y2="14"></line>
-                  <line x1="1" y1="9" x2="4" y2="9"></line>
-                  <line x1="1" y1="14" x2="4" y2="14"></line>
-                </svg>
-                <span>Machine Learning &bull; Classification</span>
-              </span>
-            </div>
-            <div class="project-card__content">
-              <h3 class="project-card__title">Movie Performance &amp; Tier Classification</h3>
-              <p class="project-card__text">
-                Pipeline di classificazione supervisionata per categorizzare i titoli in fasce di rendimento commerciale 
-                (Blockbuster, Moderate, Niche) e gradimento partendo da metadati e feature ingegnerizzate.
-              </p>
-
-              <div class="notebook-insight ml-insight">
-                <span class="insight-label">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                  </svg>
-                  Model Performance:
-                </span>
-                <span class="insight-text">Accuratezza del 79% con matrice di confusione bilanciata e ottimizzazione degli iperparametri tramite GridSearch cross-validation.</span>
-              </div>
-
-              <div class="project-card__tags">
-                <span class="tag">Scikit-Learn</span>
-                <span class="tag">Classification</span>
-                <span class="tag">Feature Engineering</span>
-                <span class="tag">Python</span>
-                <span class="tag">Machine Learning</span>
-              </div>
-            </div>
-            <div class="project-card__footer notebook-actions">
-              <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="project-link project-link--ml" aria-label="Visualizza Notebook su GitHub">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-                <span>Notebook GitHub</span>
-                <span class="arrow">&rarr;</span>
-              </a>
-            </div>
-          </article>
+            <a href="#projects" class="skill-card__used">Usato in: tutti i progetti &rarr;</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Sezione Esperienza -->
-    <section class="section" id="experience">
+    <section class="section section--continued" id="experience">
       <div class="container">
         <div class="section-header">
-          <span class="section__tag">Esperienza</span>
           <h2 class="section__title">Esperienza professionale</h2>
-          <p class="section__subtitle">
-            Costruzione di soluzioni orientate al dato, ottimizzazione dei processi e analisi che supportano decisioni concrete
-          </p>
         </div>
 
-        <div class="experience-grid">
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div class="timeline-content">
-                <span class="timeline-period">2022 — Presente</span>
-                <h3>Data Manager &amp; Data Analyst</h3>
-                <p>Gestione di dataset complessi, pipeline ETL, modellazione relazionale e analisi quantitativa per progetti di business intelligence e monitoraggio performance.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div class="timeline-content">
-                <span class="timeline-period">2021 — 2022</span>
-                <h3>Data Analysis &amp; Reporting</h3>
-                <p>Analisi dei trend di mercato, creazione di KPI, reportistica e supporto alle decisioni tramite dati strutturati e dashboard.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-dot"></span>
-              <div class="timeline-content">
-                <span class="timeline-period">2020 — 2021</span>
-                <h3>Business Intelligence &amp; ETL</h3>
-                <p>Sviluppo e manutenzione di processi di ingestione, trasformazione e aggregazione dati per analisi operative e progetti di monitoring evolutivi.</p>
-              </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-period">2022 — Presente</span>
+              <h3>Data Manager &amp; Data Analyst</h3>
+              <p>Gestione di dataset complessi, pipeline ETL, modellazione relazionale e analisi quantitativa per progetti di business intelligence e monitoraggio performance.</p>
             </div>
           </div>
-
-          <div class="experience-cta">
-            <div class="experience-card">
-              <div class="experience-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                  <polyline points="2 17 12 22 22 17"></polyline>
-                  <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-              </div>
-              <h3>Metodologia di Lavoro</h3>
-              <p>
-                Mi occupo di trasformare dati grezzi in informazioni ad alto valore operativo, combinando rigore ingegneristico, competenze SQL/Python e orientamento ai risultati.
-              </p>
-              <ul>
-                <li>Progettazione schemi dati e pipeline ETL automatizzate</li>
-                <li>Analisi esplorativa e monitoraggio KPI di business</li>
-                <li>Machine Learning supervisionato per stime predittive</li>
-                <li>Supporto decisionale basato su evidenze quantitative</li>
-              </ul>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-period">2021 — 2022</span>
+              <h3>Data Analysis &amp; Reporting</h3>
+              <p>Analisi dei trend di mercato, creazione di KPI, reportistica e supporto alle decisioni tramite dati strutturati e dashboard.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-period">2020 — 2021</span>
+              <h3>Business Intelligence &amp; ETL</h3>
+              <p>Sviluppo e manutenzione di processi di ingestione, trasformazione e aggregazione dati per analisi operative e progetti di monitoring evolutivi.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Sezione Certificazioni / Corsi / Formazione -->
+    <!-- Sezione Formazione -->
     <section class="section section--alt" id="certifications">
       <div class="container">
         <div class="section-header">
-          <span class="section__tag">Formazione</span>
-          <h2 class="section__title">Certificazioni, Corsi &amp; Formazione</h2>
-          <p class="section__subtitle">
-            Percorsi formativi e competenze specialistiche in data management, analisi quantitativa e machine learning
-          </p>
+          <h2 class="section__title">Formazione</h2>
         </div>
 
         <div class="cert-grid">
@@ -806,12 +480,33 @@
       </div>
     </section>
 
+    <!-- Sezione Come lavoro (ex Chi sono + Metodologia) -->
+    <section class="section" id="method">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section__title">Come lavoro</h2>
+        </div>
+
+        <div class="method">
+          <p class="method__lead">
+            Opero come <strong>Data Manager</strong> con un approccio incentrato sull'accuratezza del dato,
+            sulla scalabilità dei modelli relazionali e sulla trasformazione di dataset complessi in insight strategici.
+          </p>
+          <ul class="method__list">
+            <li>Progettazione schemi dati e pipeline ETL automatizzate</li>
+            <li>Analisi esplorativa e monitoraggio KPI di business</li>
+            <li>Machine Learning supervisionato per stime predittive</li>
+            <li>Supporto decisionale basato su evidenze quantitative</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Sezione Contatti -->
     <section class="section section--contrast" id="contact">
       <div class="container">
         <div class="section-header">
-          <span class="section__tag">Contatto</span>
-          <h2 class="section__title">Mettiti in contatto</h2>
+          <h2 class="section__title">Contatti</h2>
           <p class="section__subtitle">
             Hai una proposta lavorativa, un progetto di analisi dati o desideri scambiare idee? Scrivimi un messaggio.
           </p>
@@ -820,21 +515,26 @@
         <div class="contact__grid">
           <!-- Info laterali -->
           <div class="contact__info">
+            <div class="contact-card contact-card--availability">
+              <div class="contact-card__icon">
+                <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-map-pin"/></svg>
+              </div>
+              <div class="contact-card__details">
+                <h4>Disponibile da subito</h4>
+                <p>Italia &middot; In sede / Ibrido / Full remote</p>
+                <p class="availability-copy">Opportunità in Data Management, Data Analysis e progetti data-driven.</p>
+              </div>
+            </div>
+
             <div class="contact-card">
               <div class="contact-card__icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
+                <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-mail"/></svg>
               </div>
               <div class="contact-card__details">
                 <h4>Email</h4>
                 <p>marco.santagati96@gmail.com</p>
                 <button type="button" class="copy-btn" id="copyEmailBtn" data-email="marco.santagati96@gmail.com" title="Copia email negli appunti">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                  </svg>
+                  <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-copy"/></svg>
                   <span>Copia indirizzo</span>
                 </button>
               </div>
@@ -842,24 +542,7 @@
 
             <div class="contact-card">
               <div class="contact-card__icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-              </div>
-              <div class="contact-card__details">
-                <h4>GitHub</h4>
-                <p>Marco967a</p>
-                <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="link-external">
-                  Visita profilo &rarr;
-                </a>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <div class="contact-card__icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
+                <svg class="icon icon--fill" width="22" height="22" aria-hidden="true"><use href="#i-linkedin"/></svg>
               </div>
               <div class="contact-card__details">
                 <h4>LinkedIn</h4>
@@ -872,15 +555,14 @@
 
             <div class="contact-card">
               <div class="contact-card__icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
+                <svg class="icon icon--fill" width="22" height="22" aria-hidden="true"><use href="#i-github"/></svg>
               </div>
               <div class="contact-card__details">
-                <h4>Posizione &amp; Disponibilità</h4>
-                <p>Italia (In sede / Ibrido / Full Remote)</p>
-                <p class="availability-copy">Disponibile per opportunità in Data Management, Data Analysis e progetti data-driven.</p>
+                <h4>GitHub</h4>
+                <p>Marco967a</p>
+                <a href="https://github.com/Marco967a" target="_blank" rel="noopener noreferrer" class="link-external">
+                  Visita profilo &rarr;
+                </a>
               </div>
             </div>
           </div>
@@ -907,25 +589,18 @@
             </div>
 
             <div class="form-field">
-              <label for="subject">Oggetto</label>
-              <input type="text" id="subject" name="subject" placeholder="Opportunità lavorativa / Progetto" />
-            </div>
-
-            <div class="form-field">
               <label for="message">Messaggio <span class="required">*</span></label>
               <textarea id="message" name="message" rows="5" placeholder="Scrivi qui i dettagli del messaggio..." required></textarea>
               <span class="field-error" id="messageError"></span>
             </div>
 
-            <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
-              <span class="btn-text">Invia Messaggio</span>
+            <button type="submit" class="btn btn--cta btn--lg btn--block" id="submitBtn">
+              <span class="btn-text">Invia messaggio</span>
               <span class="btn-spinner" aria-hidden="true"></span>
             </button>
 
             <p class="form-privacy-note">
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
+              <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-shield"/></svg>
               <span>I dati inviati saranno utilizzati esclusivamente per rispondere alla richiesta, nel rispetto della privacy.</span>
             </p>
 
@@ -949,10 +624,8 @@
       </div>
 
       <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">Chi sono</a>
-        <a href="#skills">Competenze</a>
         <a href="#projects">Progetti</a>
+        <a href="#skills">Competenze</a>
         <a href="#experience">Esperienza</a>
         <a href="#certifications">Formazione</a>
         <a href="#contact">Contatti</a>
@@ -966,9 +639,7 @@
 
   <!-- Pulsante Torna su -->
   <button class="back-to-top" id="backToTop" aria-label="Torna all'inizio della pagina">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
+    <svg class="icon" width="20" height="20" stroke-width="2.5" aria-hidden="true"><use href="#i-chevron-up"/></svg>
   </button>
 
   <script src="script.js"></script>

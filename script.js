@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initDynamicYear();
   initMobileNavigation();
   initScrollSpy();
-  initProjectFilters();
   initSpotlightToggle();
   initCopyEmail();
   initContactForm();
@@ -102,53 +101,7 @@ function initScrollSpy() {
 }
 
 /**
- * 4. Filtro interattivo per le categorie di progetti, Spotlight & Notebooks
- */
-function initProjectFilters() {
-  const filterBtns = document.querySelectorAll(".filter-btn");
-  const projectCards = document.querySelectorAll(".project-card");
-  const spotlightCard = document.getElementById("boxofficeSpotlight");
-
-  if (!filterBtns.length) return;
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      // Aggiorna stato attivo dei bottoni
-      filterBtns.forEach(b => {
-        b.classList.remove("active");
-        b.setAttribute("aria-selected", "false");
-      });
-      btn.classList.add("active");
-      btn.setAttribute("aria-selected", "true");
-
-      const filterValue = btn.getAttribute("data-filter");
-
-      // Gestione visibilità Spotlight Card
-      if (spotlightCard) {
-        const spotlightCat = spotlightCard.getAttribute("data-category") || "";
-        if (filterValue === "all" || filterValue === "boxoffice" || spotlightCat.includes(filterValue)) {
-          spotlightCard.classList.remove("hidden");
-        } else {
-          spotlightCard.classList.add("hidden");
-        }
-      }
-
-      // Filtra le card della griglia
-      projectCards.forEach(card => {
-        const cardCategories = card.getAttribute("data-category") || "";
-        
-        if (filterValue === "all" || cardCategories.includes(filterValue)) {
-          card.classList.remove("hidden");
-        } else {
-          card.classList.add("hidden");
-        }
-      });
-    });
-  });
-}
-
-/**
- * 5. Toggle per i dettagli tecnici della Pipeline NewBoxofficeProject
+ * 4. Toggle per i dettagli tecnici della Pipeline NewBoxofficeProject
  */
 function initSpotlightToggle() {
   const toggleBtn = document.getElementById("togglePipelineDetails");
@@ -158,19 +111,13 @@ function initSpotlightToggle() {
   if (!toggleBtn || !detailsBox || !btnText) return;
 
   toggleBtn.addEventListener("click", () => {
-    const isHidden = detailsBox.hasAttribute("hidden");
+    const willOpen = detailsBox.hasAttribute("hidden");
 
-    if (isHidden) {
-      detailsBox.removeAttribute("hidden");
-      btnText.textContent = "Nascondi Dettagli Architettura";
-      toggleBtn.classList.add("btn--primary");
-      toggleBtn.classList.remove("btn--ghost");
-    } else {
-      detailsBox.setAttribute("hidden", "");
-      btnText.textContent = "Dettagli Architettura & Query";
-      toggleBtn.classList.remove("btn--primary");
-      toggleBtn.classList.add("btn--ghost");
-    }
+    detailsBox.toggleAttribute("hidden", !willOpen);
+    toggleBtn.setAttribute("aria-expanded", String(willOpen));
+    btnText.textContent = willOpen
+      ? "Nascondi dettagli architettura"
+      : "Dettagli architettura & query";
   });
 }
 
