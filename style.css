@@ -941,6 +941,46 @@ button, input, textarea {
   margin-top: auto;
 }
 
+.projects__group-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 3rem 0 1.25rem;
+}
+
+.projects__grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card__footer {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent-petrol);
+}
+
+.project-link:hover {
+  color: var(--accent-petrol-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-link .arrow {
+  transition: transform var(--transition-fast);
+}
+
+.project-link:hover .arrow {
+  transform: translateX(3px);
+}
+
 .projects__more {
   text-align: center;
   margin-top: 1.5rem;
@@ -1609,7 +1649,8 @@ button, input, textarea {
     justify-content: center;
   }
 
-  .skills__grid {
+  .skills__grid,
+  .projects__grid--3 {
     grid-template-columns: 1fr;
   }
 

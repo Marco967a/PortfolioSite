@@ -169,7 +169,7 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section__title">Progetti</h2>
-          <p class="section__subtitle">Un case study end-to-end e quattro notebook di analisi</p>
+          <p class="section__subtitle">Un case study end-to-end e notebook di analisi</p>
         </div>
 
         <!-- Case study: Italian Box Office Monitoring -->
@@ -332,8 +332,82 @@
           </article>
         </div>
 
+        <!-- Notebook pubblici su Google Colab -->
+        <h3 class="projects__group-title">Notebook su Google Colab</h3>
+        <div class="projects__grid projects__grid--3" id="notebooksGrid">
+
+          <article class="project-card project-card--ml">
+            <span class="project-card__badge">
+              <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-cpu"/></svg>
+              Machine Learning &bull; Regression
+            </span>
+            <h3 class="project-card__title">CalCOFI Oceanographic Analysis</h3>
+            <p class="project-card__text">Pulizia, EDA e regressione lineare per predire la temperatura dell'acqua marina (dataset CalCOFI: 11.100 record completi, 9 variabili).</p>
+            <div class="result result--metric">
+              <span class="result__value">R&sup2; &asymp; 0.96</span>
+              <span class="result__text">Regressione lineare multipla, stesso valore su training e test set (RMSE &asymp; 0.18): nessun overfitting.</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Linear Regression</span>
+              <span class="tag">EDA</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://colab.research.google.com/drive/1UUALXDzvTP-mZILFsiavUOf3S7SHDdlH" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Apri il notebook CalCOFI su Google Colab">
+                Apri il notebook su Colab <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__badge">
+              <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-book"/></svg>
+              EDA &bull; Data Cleaning
+            </span>
+            <h3 class="project-card__title">Adult Census Income</h3>
+            <p class="project-card__text">Pulizia di un dataset censuario (32.510 record, 15 variabili) con valori mancanti non standard, ed EDA sulla soglia di reddito annuo.</p>
+            <div class="result">
+              <span class="result__label">Focus dell'analisi</span>
+              <span class="result__text">Driver socio-economici del reddito e analisi di disparit&agrave; di genere.</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://colab.research.google.com/drive/1hSRXvw4pdI7yen-VM9AGoGHtZlPQA1YV" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Apri il notebook Adult Census Income su Google Colab">
+                Apri il notebook su Colab <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__badge">
+              <svg class="icon" width="14" height="14" aria-hidden="true"><use href="#i-book"/></svg>
+              EDA &bull; Feature Scaling
+            </span>
+            <h3 class="project-card__title">Iris Benchmark Scaling</h3>
+            <p class="project-card__text">Pulizia, EDA comparativa morfologica e benchmark di tre tecniche di normalizzazione: MinMax, Standard e Robust.</p>
+            <div class="result">
+              <span class="result__label">Focus dell'analisi</span>
+              <span class="result__text">Invarianza della skewness nei diversi scaler.</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://colab.research.google.com/drive/1X-awVTGzsZrKkgswWt3vr9USu-QGwAMe" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Apri il notebook Iris su Google Colab">
+                Apri il notebook su Colab <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
         <p class="projects__more">
-          Altri notebook di analisi:
+          Repository con tutti i notebook:
           <a href="https://github.com/Marco967a/Portfolio_Notebooks" target="_blank" rel="noopener noreferrer" class="link-external">Portfolio_Notebooks su GitHub &rarr;</a>
         </p>
 
@@ -385,7 +459,7 @@
               <span class="tag">Scikit-Learn</span>
               <span class="tag">Matplotlib, Seaborn</span>
             </div>
-            <a href="#projectsGrid" class="skill-card__used">Usato in: EDA &amp; Machine Learning Projects &rarr;</a>
+            <a href="#notebooksGrid" class="skill-card__used">Usato in: Notebook su Colab &rarr;</a>
           </div>
 
           <div class="skill-card">
