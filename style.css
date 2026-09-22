@@ -956,6 +956,11 @@ button, input, textarea {
   margin-top: 1.25rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .project-link {
@@ -964,6 +969,16 @@ button, input, textarea {
   gap: 0.4rem;
   font-size: 0.92rem;
   font-weight: 600;
+  color: var(--accent-petrol);
+}
+
+.project-link--secondary {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.project-link--secondary:hover {
   color: var(--accent-petrol);
 }
 
