@@ -5,9 +5,9 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/it/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Portfolio professionale di **Marco Santagati** – *Data Manager & Data Analyst*.  
+Portfolio professionale di **Marco Santagati** – *Data Analyst*.  
 Sviluppato con architettura pulita, leggera e performante in **HTML5 Semantico**, **CSS3 Moderno** e **Vanilla JavaScript**.  
-Il sito include sezioni dedicate a formazione, esperienza, case study e un bottone di download del CV per una presentazione professionale più completa.
+Il sito include sezioni dedicate a progetti, competenze, formazione e un bottone di download del CV per una presentazione professionale più completa.
 
 ---
 

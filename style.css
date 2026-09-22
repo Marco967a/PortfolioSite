@@ -1,6 +1,6 @@
 /* ==========================================================================
    PORTFOLIO - MARCO SANTAGATI
-   Data Manager & Analytics Design System
+   Data Analyst & Analytics Design System
    Warm Modern Minimal & Analytical Dashboard Aesthetic
 
    Regole di design:
@@ -1164,6 +1164,11 @@ button, input, textarea {
   border-radius: var(--radius-md);
   padding: 1.5rem;
   box-shadow: var(--shadow-sm);
+}
+
+.cert-card--diploma {
+  grid-column: 1 / -1;
+  border-color: var(--accent-petrol-border);
 }
 
 .cert-card__year {
