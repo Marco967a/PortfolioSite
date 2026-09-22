@@ -1034,7 +1034,7 @@ button, input, textarea {
    -------------------------------------------------------------------------- */
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
@@ -1169,6 +1169,27 @@ button, input, textarea {
 .cert-card--diploma {
   grid-column: 1 / -1;
   border-color: var(--accent-petrol-border);
+}
+
+.cert-card__modules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  list-style: none;
+}
+
+.cert-card__modules li {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.25rem 0.65rem;
+  background: var(--accent-sage-soft);
+  color: var(--accent-sage);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--accent-sage-border);
+  font-weight: 500;
 }
 
 .cert-card__year {
@@ -1602,6 +1623,10 @@ button, input, textarea {
 @media (max-width: 1040px) {
   .header-cv {
     display: none;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
