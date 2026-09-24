@@ -204,10 +204,11 @@
               Data Ingestion &bull; Monitoring
             </span>
             <h3 class="project-card__title">Etna Volcanic Monitor</h3>
-            <p class="project-card__text">Sistema di monitoraggio e aggregazione dati vulcanici per l'Etna: ingestione automatizzata, storage relazionale e analisi temporale.</p>
+            <p class="project-card__text">Pipeline di ingestione dati vulcanici per l'Etna: cataloghi sismici INGV (ISIDe, EtnaRCSC/EtnaRSC), tremore via FDSN, hotspot NASA FIRMS ed eventi eruttivi in PostgreSQL, con feature engineering, analisi esplorativa pre-eruttiva e test offline.</p>
             <div class="project-card__tags">
               <span class="tag">Python</span>
               <span class="tag">PostgreSQL</span>
+              <span class="tag">ObsPy</span>
               <span class="tag">Data Ingestion</span>
             </div>
             <div class="project-card__footer">
@@ -310,10 +311,10 @@
               Statistica &bull; Geofisica
             </span>
             <h3 class="project-card__title">Etna: segnali sismici pre-eruttivi</h3>
-            <p class="project-card__text">Test di permutazione su profondità e b-value dei terremoti prima dell'inizio delle fasi eruttive (catalogo EtnaRCSC, 14 fasi indipendenti), con controllo dei confondenti e del bias di selezione.</p>
+            <p class="project-card__text">Test di permutazione su profondità e b-value dei terremoti prima dell'inizio delle fasi eruttive (catalogo INGV-OE 2020-2026, 15 fasi indipendenti), con controllo dei confondenti e verifica su dati nuovi.</p>
             <div class="result">
               <span class="result__label">Risultato</span>
-              <span class="result__text">Nessun precursore robusto: il conteggio degli eventi è un artefatto, la profondità resta un'ipotesi da confermare.</span>
+              <span class="result__text">Nessun precursore robusto: il conteggio degli eventi è un artefatto e l'ipotesi sulla profondità non regge su dati nuovi.</span>
             </div>
             <div class="project-card__tags">
               <span class="tag">Python</span>
